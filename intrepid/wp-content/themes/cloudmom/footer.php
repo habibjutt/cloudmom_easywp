@@ -114,14 +114,10 @@
 <!------------------- Amazon API Product Carousal ------------------->
 
 <!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js" async></script>
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script> -->
+<!-- Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" defer></script>
 
-
-<!-- <script src="<?php bloginfo('template_url'); ?>/assets/owl-carousal-amazon/js/jquery-3.5.1.slim.min.js"></script> -->
+<!-- Theme scripts -->
 <script src="<?php bloginfo('template_url'); ?>/assets/owl-carousal-amazon/js/popper.min.js" defer></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/owl-carousal-amazon/js/bootstrap.min.js" defer></script>
 <script src="<?php bloginfo('template_url'); ?>/assets/owl-carousal-amazon/js/slick/slick.min.js" defer></script>
@@ -412,8 +408,6 @@
 } */
 </style>
 
-    
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function() {
     // Open the popup when the image link is clicked

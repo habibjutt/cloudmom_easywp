@@ -25,7 +25,11 @@ if ( function_exists('add_theme_support') ){
         'flex-width'  => true,
     ) );
 
-   
+    // Add WooCommerce support
+    add_theme_support( 'woocommerce' );
+    add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
 }
 
 add_filter('upload_mimes', 'cs__mime_types');
@@ -239,12 +243,67 @@ include_once 'inc/admin.php';
 include_once 'inc/breadcrumbs.php';
 
 
+/*------------------------------------*\
+	WooCommerce Support
+\*------------------------------------*/
+
+// Remove default WooCommerce wrappers
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
+
+// Add custom WooCommerce wrappers
+add_action( 'woocommerce_before_main_content', 'cs__woocommerce_wrapper_start', 10 );
+add_action( 'woocommerce_after_main_content', 'cs__woocommerce_wrapper_end', 10 );
+
+function cs__woocommerce_wrapper_start() {
+    echo '<div class="container">';
+    echo '<div class="woocommerce-content">';
+}
+
+function cs__woocommerce_wrapper_end() {
+    echo '</div>'; // .woocommerce-content
+    echo '</div>'; // .container
+}
+
+// Disable WooCommerce default sidebar
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+
+// Set products per page
+add_filter( 'loop_shop_per_page', function( $cols ) {
+    return 12;
+}, 20 );
+
+
 function add_defer_async_attribute($tag, $handle) {
-    // Apply async to all scripts
+    // Don't defer on admin or WooCommerce pages
     if (is_admin()) {
         return $tag;
     }
-
+    
+    // Don't defer any scripts on WooCommerce pages to avoid conflicts
+    if (function_exists('is_woocommerce') && (is_woocommerce() || is_cart() || is_checkout() || is_account_page())) {
+        return $tag;
+    }
+    
+    // Don't defer critical scripts that other scripts depend on
+    $critical_scripts = array(
+        'jquery',
+        'jquery-core',
+        'jquery-migrate',
+        'wp-polyfill',
+        'wp-hooks',
+        'wp-i18n',
+        'wp-api-fetch',
+        'wp-url',
+        'wp-data',
+        'lodash'
+    );
+    
+    // Don't defer if it's a critical script
+    if (in_array($handle, $critical_scripts)) {
+        return $tag;
+    }
+    
     return str_replace(' src', ' defer="defer" src', $tag);
 }
 add_filter('script_loader_tag', 'add_defer_async_attribute', 10, 2);
@@ -300,6 +359,11 @@ function serve_webp_images($image_src, $image) {
 add_filter('wp_get_attachment_image_src', 'serve_webp_images', 10, 2);
 
 function move_scripts_to_footer() {
+    // Don't move scripts to footer if it's a WooCommerce page
+    if (is_woocommerce() || is_cart() || is_checkout() || is_account_page()) {
+        return;
+    }
+    
     remove_action('wp_head', 'wp_print_scripts');
     remove_action('wp_head', 'wp_print_head_scripts', 9);
     remove_action('wp_head', 'wp_enqueue_scripts', 1);
@@ -312,22 +376,13 @@ add_action('wp_enqueue_scripts', 'move_scripts_to_footer');
 
 function defer_jquery_script() {
     if (!is_admin()) {
+        // Don't defer jQuery - it's needed by WooCommerce and other scripts
         wp_deregister_script('jquery');
-        wp_register_script('jquery', includes_url('/js/jquery/jquery.js'), array(), '3.7.1', true);
+        wp_register_script('jquery', includes_url('/js/jquery/jquery.js'), array(), '3.7.1', false);
         wp_enqueue_script('jquery');
-        
-        // Add the defer attribute to the jQuery script
-        add_filter('script_loader_tag', 'add_defer_attribute_to_jquery', 10, 2);
     }
 }
 add_action('wp_enqueue_scripts', 'defer_jquery_script');
-
-function add_defer_attribute_to_jquery($tag, $handle) {
-    if ('jquery' === $handle) {
-        return str_replace(' src', ' defer="defer" src', $tag);
-    }
-    return $tag;
-}
 
 add_filter('wp_calculate_image_srcset', '__return_false');
 add_filter('wp_lazy_loading_enabled', '__return_true');
