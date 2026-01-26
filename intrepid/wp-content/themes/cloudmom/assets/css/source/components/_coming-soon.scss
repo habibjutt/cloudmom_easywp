@@ -1,0 +1,48 @@
+/**
+ * Coming soon
+ */
+
+.coming-soon {
+    background: #F7F5F7;
+    border: 3px solid $accent_pink;
+    margin: 100px auto;
+    max-width: 770px;
+    padding: 95px 30px;
+    text-align: center;
+    width: 100%;
+
+    @include mediaBetween(xs,$mobileBreakpoint){
+        max-width: #{550px - $gutter};
+    }
+    @include mediaMaxWidth(xs){
+        margin: 60px $gutter/2;
+        max-width: calc(100% - #{$gutter});
+    }
+
+    &__subtitle {
+        font-size: rem(36);
+        font-style: italic;
+        font-weight: $text-bold;
+        line-height: (46/36);
+        margin: 0 0 35px;
+
+        @include mediaMaxWidth($mobileBreakpoint){
+            font-size: rem(24);
+            line-height: (32/24);
+        }
+    }
+    &__title {
+        font-size: rem(42);
+        letter-spacing: .2em;
+        line-height: (50/42);
+        margin: 0 auto;
+        max-width: 570px;
+        text-transform: uppercase;
+
+        @include mediaMaxWidth($mobileBreakpoint){
+            font-size: rem(28);
+            line-height: (34/28);
+            max-width: 380px;
+        }
+    }
+}

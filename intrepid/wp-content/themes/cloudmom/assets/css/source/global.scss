@@ -1,0 +1,61 @@
+/************ Base styling ************/
+$html_fontSize: 16px;
+
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/fonts';
+@import 'base/normalize';
+@import 'base/grid';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/wp-blocks';
+
+
+/************ Vendor styling ************/
+@import '../vendor/splide/splide-core.min';
+
+
+/************ Components ************/
+@import 'components/animations';
+@import 'components/articles-navigation';
+@import 'components/breadcrumbs';
+@import 'components/coming-soon';
+@import 'components/comments';
+@import 'components/forms';
+@import 'components/navigation';
+@import 'components/pagination';
+@import 'components/search';
+@import 'components/sidebar';
+@import 'components/splide';
+
+
+/************ Layout ************/
+@import 'layout/header';
+@import 'layout/footer';
+
+// Block
+@import 'layout/block/highlighted-content';
+@import 'layout/block/product';
+
+// Content
+@import 'layout/content/category-overview';
+@import 'layout/content/post';
+@import 'layout/content/press-overview';
+
+// Sections
+@import 'layout/section/categories-overview';
+@import 'layout/section/contact-form';
+@import 'layout/section/highlighted-blocks';
+@import 'layout/section/intro';
+@import 'layout/section/press';
+@import 'layout/section/related-posts';
+@import 'layout/section/sitemap';
+@import 'layout/section/slider-posts';
+
+// Templates
+@import 'layout/templates/404';
+@import 'layout/templates/archive';
+@import 'layout/templates/blog';
+@import 'layout/templates/page';

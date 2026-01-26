@@ -1,0 +1,137 @@
+/**
+ * Default template
+ */
+
+.default-page {
+    $t: &;
+
+    margin-bottom: 80px;
+    margin-top: 80px;
+
+    @include mediaMaxWidth(sm){
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+    
+    &__sidebar {
+        margin-top: 10px;
+        position: relative;
+        z-index: 10;
+
+        @include mediaMaxWidth(lg){
+            margin: 0 auto 50px;
+            max-width: 400px;
+            text-align: center;
+        }
+    }
+    &__button-back {
+        @extend %btn;
+
+        background-color: $white;
+        border-color: $shade_blue;
+        color: $medium_gray;
+        font-size: rem(18);
+        letter-spacing: 0;
+        margin: 0 0 35px;
+        min-width: 0;
+        padding: 6px 20px;
+        text-transform: none;
+
+        @include mediaMaxWidth(xs){
+            padding: 9px 20px;
+        }
+            
+        &::before {
+            background: transparent;
+            border-radius: 0;
+            border-style: solid;
+            border-width: 0 0 2px 2px;
+            content: '';
+            display: inline-block;
+            height: 9px;
+            margin: -3px 10px 0 0;
+            opacity: 1;
+            position: static;
+            transform: rotate(45deg);
+            transition: none;
+            vertical-align: middle;
+            width: 9px;
+            z-index: 1;
+        }
+
+        &:hover,
+        &:focus {
+            @include mediaMinWidth($mobileBreakpoint){
+                background-color: $shade_blue;
+                color: $dark_gray;
+            }
+        }
+    }
+    &__container {
+        align-items: flex-start;
+    }
+    &__title {
+        margin: 0 0 30px;
+    }
+    &__meta {
+        color: $medium_gray;
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: rem(12);
+        letter-spacing: .1em;
+        list-style: none;
+        margin: -10px 0 30px;
+        padding: 0;
+        text-transform: uppercase;
+
+        li + li {
+            &::before {
+                content: '|';
+                margin: 0 10px;
+            }
+        }
+    }
+    &__content {
+        @include getStylesBreakpoints($big);
+
+        p {
+            margin: 0 0 1.5rem;
+        }
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+            margin-bottom: 35px;
+            margin-top: 35px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__social-networks {
+        position: sticky;
+        top: #{map-get($header_height, 'default') + 30px};
+
+        @include mediaMaxWidth(sm){
+            margin: 50px 0 0;
+            position: static;
+        }
+
+        .social-networks-menu {
+            justify-content: flex-end;
+
+            @include mediaBetween(sm,$containerWidth){
+                align-items: flex-end;
+                flex-flow: column nowrap;
+            }
+            @include mediaMaxWidth(sm){
+                justify-content: center;
+            }
+        }
+
+        body.admin-bar & {
+            top: #{map-get($header_height, 'default') + 30px + 32px};
+        }
+    }
+}

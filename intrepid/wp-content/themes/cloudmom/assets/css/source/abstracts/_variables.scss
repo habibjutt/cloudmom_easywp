@@ -1,0 +1,170 @@
+// ************ Grid and breakpoints ************
+$containerWidth: 1588px;
+$contentWidth: (
+    md: 700px,
+    sm: 540px,
+	xs: 400px
+);
+$gutter: 16px;
+$columns: 12;
+
+$breakpoints: (
+    xs: 551,
+    sm: 769,
+    md: 1025,
+    lg: 1201,
+    xl: 1500
+);
+$mobileBreakpoint: 'md';
+
+
+// ************ Global ************
+$global_transition: 0.2s ease-in-out;
+
+
+// ************ Colors ************
+$white: #ffffff;
+$black: #000000;
+$light_gray: #F5F6F8;
+$medium_gray: #707070;
+$dark_gray: #414141;
+
+$blue: #1E6DB6;
+$light_blue: #F0F7F8;
+$shade_blue: #DBE4E5;
+$plum: #6E3264;
+$accent_pink: #E2D0DF;
+$deep_blue: #2B3B95;
+$magenta: #C12F89;
+$maya_blue: #55C1FF;
+$blue_grass: #046865;
+$rich_red: #D00000;
+$honey_yellow: #F2AF29;
+$tomato: #FE654F;
+
+// Functional colors
+$focus: #0072C5;
+$success: #009F53;
+$error: #E2001B;
+
+
+// ************ Typography *************
+$general_font: 'Lato', sans-serif;
+$general_fontSize: $html_fontSize;
+$general_color: $dark_gray;
+$general_lineHeight: 1.5;
+$general_margin: 1rem;
+
+$general_borderColor: $shade_blue;
+
+$general_linkColor: $blue;
+$general_linkColorHover: $magenta;
+
+$text-normal: 400;
+$text-bold: 700;
+
+$h1: (
+    default: (
+		'font-size': rem(46),
+        'font-weight': $text-normal,
+		'line-height': (56/46)
+	),
+    $mobileBreakpoint: (
+		'font-size': rem(30),
+		'line-height': (38/30)
+    )
+);
+$h2: (
+    default: (
+		'font-size': rem(32),
+        'font-weight': $text-bold,
+		'line-height': (46/32)
+	),
+    $mobileBreakpoint: (
+		'font-size': rem(24),
+		'line-height': (32/24)
+    )
+);
+$h3: (
+    default: (
+		'font-size': rem(28),
+        'font-weight': $text-bold,
+        'letter-spacing': 0.04em,
+		'line-height': (38/28)
+	),
+    $mobileBreakpoint: (
+		'font-size': rem(20),
+        'letter-spacing': normal,
+		'line-height': (28/20)
+    )
+);
+$h4: (
+    default: (
+		'font-size': rem(26),
+        'font-weight': $text-bold,
+		'line-height': (38/26)
+	),
+    $mobileBreakpoint: (
+		'font-size': rem(18),
+		'line-height': (28/18)
+    )
+);
+$h5: (
+    default: (
+		'font-size': rem(22),
+        'font-weight': $text-bold,
+		'line-height': (30/22)
+	),
+    $mobileBreakpoint: (
+		'font-size': rem(18),
+		'line-height': (26/18)
+    )
+);
+$h6: (
+    default: (
+		'font-size': rem(20),
+        'font-weight': $text-normal,
+		'line-height': (30/20)
+	),
+    $mobileBreakpoint: (
+		'font-size': rem(16),
+		'line-height': (26/16)
+    )
+);
+$big: (
+    default: (
+		'font-size': rem(24),
+		'line-height': (36/24)
+	),
+    $mobileBreakpoint: (
+        'font-size': rem(18),
+		'line-height': (28/18)
+    )
+);
+$small: (
+    'font-size': rem(14)
+);
+$tiny: (
+    'font-size': rem(12)
+);
+
+
+// ************ Animations *************
+$spinner_speed: 0.75s;
+$animatedBlock_speed: 0.8s;
+$animatedBlock_delay: 0.2s;
+$animatedBlock_shift: 30px;
+
+
+// ************ Content *************
+// Header
+$header_height: (
+    default: 100px,
+    $mobileBreakpoint: 60px
+);
+$header_logoWidth: (
+    default: 116px,
+    $mobileBreakpoint: 70px
+);
+$header_boxShadow: 0px 4px 16px rgba(2, 82, 140, 0.1);
+$header_menuTransition: 0.3s ease-in-out;

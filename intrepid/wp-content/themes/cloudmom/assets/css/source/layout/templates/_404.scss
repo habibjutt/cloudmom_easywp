@@ -1,0 +1,16 @@
+/**
+ * Template / 404
+ */
+
+.page-404 {
+    margin-bottom: 80px;
+    margin-top: 80px;
+
+    &__title {
+        font-size: 64px;
+        margin: 0 0 20px;
+    }
+    &__button {
+        margin: 60px 0 0;
+    }
+}

@@ -1,0 +1,240 @@
+/**
+ * Typography 
+ */
+
+p {
+    color: inherit;
+    margin: 0 0 $general_margin;
+
+    &:last-child {
+		margin-bottom: 0 !important;
+	}
+}
+a {
+    transition: all $global_transition;
+    
+    &::before,
+    &::after {
+		transition: all $global_transition;
+	}
+
+    &:not([class]),
+    &[class=""] {
+        color: $general_linkColor;
+
+        &:hover,
+        &:focus {
+            @include mediaMinWidth($mobileBreakpoint){
+                color: $general_linkColorHover;
+                text-decoration: none;
+            }
+        }
+    }
+    &.builtin {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            @include mediaMinWidth($mobileBreakpoint){
+                text-decoration: underline;
+            }
+        }
+    }
+}
+hr {
+    border-color: $general_borderColor;
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    margin: $general_margin*2 0;
+}
+code,
+kbd {
+    background-color: rgba($focus, 0.05);
+    border: none;
+    border-radius: 0;
+    color: $focus;
+    display: inline;
+    padding: 1px 4px;
+}
+pre {
+    color: $black;
+    font-size: 87.5%;
+    margin: $general_margin 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+q {
+	quotes: '“' '”';
+}
+mark {
+    background: $dark_gray;
+    color: $white;
+    padding: 1px 4px;
+}
+address {
+    font-style: italic;
+    margin: 0 0 $general_margin;
+}
+blockquote {
+    margin: 0 0 $general_margin;
+}
+cite {
+    &::before {
+        content: '- ';
+    }
+}
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+
+    &:focus {
+        background-color: #eee;
+        clip: auto !important;
+        clip-path: none;
+        color: #444;
+        display: block;
+        font-size: 1em;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000; /* Above WP toolbar. */
+    }
+}
+
+/*** Headings ***/
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+    margin: 0 0 $general_margin;
+}
+h1,.h1 {
+    @include getStylesBreakpoints($h1);
+}
+h2,.h2 {
+    @include getStylesBreakpoints($h2);
+}
+h3,.h3 {
+    @include getStylesBreakpoints($h3);
+    color: $medium_gray;
+}
+h4,.h4 {
+    @include getStylesBreakpoints($h4);
+}
+h5,.h5 {
+    @include getStylesBreakpoints($h5);
+    color: $medium_gray;
+}
+h6,.h6 {
+    @include getStylesBreakpoints($h6);
+}
+
+
+/*** Lists ***/
+ol, ul {
+    color: inherit;
+    margin-bottom: $general_margin;
+    margin-top: $general_margin;
+    padding: 0 0 0 1.25em;
+    
+    ::marker {
+        color: $plum;
+    }
+    ol, ul {
+        font-size: inherit;
+        margin-bottom: $general_margin/2;
+        margin-top: $general_margin/2;
+    }
+    li {
+        margin: 0;
+    }
+}
+dl {
+    margin-bottom: $general_margin;
+    margin-top: $general_margin;
+
+    dt {
+		margin: $general_margin/2 0;
+	}
+    dd {
+        margin: 0 0 0 $general_margin*2;
+    }
+}
+
+
+/*** Table ***/
+table {
+    border-collapse: collapse;
+    border-radius: 0;
+    margin: 0 0 $general_margin;
+    width: 100%;
+}
+thead, tfoot {
+    border: 1px solid $general_borderColor;
+    
+    th, td {
+        font-weight: $text-bold;
+        padding: 0.5rem 0.625rem 0.625rem;
+        text-align: left;
+    }
+}
+thead {
+    background: $general_borderColor;
+}
+tbody {
+    border: 1px solid $general_borderColor;
+    background-color: $white;
+
+    th, td {
+        padding: 0.5rem 0.625rem 0.625rem;
+    }
+}
+tfoot {
+    background: $light_gray;
+}
+
+
+/*** WP classes ***/
+.alignnone {
+    clear: both;
+    display: block;
+    margin: $general_margin 0;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: $general_margin auto $general_margin;
+}
+.alignleft {
+    float: left !important;
+    margin: $general_margin $general_margin $general_margin 0;
+}
+.alignright {
+    float: right !important;
+    margin: $general_margin 0 $general_margin $general_margin;
+}
+
+
+/*** Other ***/
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}

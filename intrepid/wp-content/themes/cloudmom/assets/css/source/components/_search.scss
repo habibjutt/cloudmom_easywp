@@ -1,0 +1,22 @@
+/**
+ * Search
+ */
+
+.search-form {
+    position: relative;
+
+    &__input {
+        padding-right: 120px;
+
+        @include mediaMaxWidth($mobileBreakpoint){
+            padding-right: 100px;
+        }
+    }
+    &__button {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+}

@@ -1,0 +1,39 @@
+/**
+ * Section / Contact form
+ */
+
+.section-contact-form {
+    margin-bottom: 130px;
+    margin-top: 55px;
+
+    &__title {
+        color: $plum;
+        font-size: rem(28);
+        letter-spacing: .1em;
+        line-height: (34/28);
+        margin: 0 0 35px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include mediaMaxWidth($mobileBreakpoint){
+            font-size: rem(24);
+            line-height: (32/24);
+        }
+    }
+    &__form {
+        margin: 0 auto;
+        max-width: 510px;
+
+        .form__label {
+            font-size: rem(20);
+            font-weight: $text-normal;
+            line-height: (24/20);
+            text-align: center;
+
+            @include mediaMaxWidth($mobileBreakpoint){
+                font-size: $general_fontSize;
+                line-height: $general_lineHeight;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+/**
+ * Block / Product
+ */
+
+.block-product,
+.editor-styles-wrapper .block-product {
+    $b: &;
+
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 60px #{-$gutter};
+
+    @include mediaMaxWidth(md){
+        margin: 50px #{-$gutter/2};
+    }
+    @include mediaMaxWidth(xs){
+        display: block;
+        margin: 40px 0;
+    }
+
+    &__image,
+    &__content {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: #{$gutter};
+        padding-right: #{$gutter};
+
+        @include mediaMaxWidth(md){
+            padding-left: #{$gutter/2};
+            padding-right: #{$gutter/2};
+        }
+        @include mediaMaxWidth(xs){
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &__image {
+        line-height: 1;
+        text-align: center;
+
+        @include mediaMaxWidth(xs){
+            margin-bottom: 30px;
+        }
+    }
+    & &__content {
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        @include mediaMaxWidth(xs){
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0 0 5px;
+        }
+    }
+    &__button {
+        margin: 38px 0 0;
+
+        @include mediaMaxWidth(md){
+            margin: 35px 0 0;
+        }
+    }
+}

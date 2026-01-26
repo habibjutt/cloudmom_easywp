@@ -1,0 +1,168 @@
+
+/**
+ * Section / Related posts
+ */
+
+.section-related-posts {
+    margin-bottom: 80px;
+    margin-top: 80px;
+
+    &__container {
+        @include mediaMaxWidth(xs){
+            justify-content: space-between;
+        }
+    }
+    &__title {
+        border-bottom: 3px solid $accent_pink;
+        color: $plum;
+        font-size: rem(36);
+        font-weight: $text-normal;
+        line-height: (56/36);
+        letter-spacing: .1em;
+        margin: 0 0 20px;
+        padding: 0 0 12px;
+        text-transform: uppercase;
+    }
+    &__item {
+        padding-bottom: 70px;
+
+        @include mediaBetween(xs,md){
+            padding-bottom: 30px;
+        }
+        @include mediaMaxWidth(xs){
+            flex: 1 0 calc(100%/2 - #{$gutter/2});
+            max-width: calc(100%/2 - #{$gutter/2});
+            padding: 0 0 30px;
+        }
+        @include mediaMaxWidth(400){
+            flex: 0 0 100%;
+            padding-bottom: 30px;
+            max-width: 100%;
+        }
+    }
+}
+
+
+// Plugin: Contextual Related Posts
+.crp_related-wrap {
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.crp_related {
+    &__title {
+        border-bottom: 3px solid $accent_pink;
+        color: $plum;
+        font-size: rem(36);
+        font-weight: $text-normal;
+        line-height: (56/36);
+        letter-spacing: .1em;
+        margin: 0 0 20px;
+        padding: 0 #{$gutter/2} 12px;
+        text-transform: uppercase;
+    }
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        margin: 0 #{-$gutter/2};
+        padding: 0;
+
+        @include mediaMaxWidth(xs){
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        flex: 0 0 (100%/3);
+        max-width: (100%/3);
+        padding: 0 #{$gutter/2} 70px;
+
+        @include mediaBetween(xs,sm){
+            flex: 0 0 (100%/2);
+            max-width: (100%/2);
+        }
+        @include mediaBetween(xs,md){
+            padding-bottom: 30px;
+        }
+        @include mediaMaxWidth(xs){
+            flex: 1 0 calc(100%/2 - #{$gutter/2});
+            max-width: calc(100%/2 - #{$gutter/2});
+            padding: 0 0 30px;
+        }
+        @include mediaMaxWidth(400){
+            flex: 0 0 100%;
+            padding-bottom: 30px;
+            max-width: 100%;
+        }
+
+        .crp_link {
+            color: $general_color;
+            text-decoration: none;
+
+            > figure {
+                margin: 0 0 30px;
+                overflow: hidden;
+                padding-top: 56.25%;
+                position: relative;
+        
+                @include mediaMaxWidth(xs){
+                    margin: 0 0 20px;
+                }
+                .crp_thumb {
+                    height: 100%;
+                    left: 0;
+                    object-fit: cover;
+                    object-position: center;
+                    position: absolute;
+                    top: 0;
+                    transition: opacity $global_transition, transform $global_transition;
+                    width: 100%;
+                }
+        
+                &:hover,
+                &:focus {
+                    @include mediaMinWidth($mobileBreakpoint){
+                        .crp_thumb {
+                            opacity: .85;
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+
+            &:hover,
+            &:focus {
+                @include mediaMinWidth($mobileBreakpoint){
+                    text-decoration: underline;
+                }
+            }
+        }
+        .crp_title,
+        .crp_excerpt {
+            padding: 0 30px;
+
+            @include mediaBetween(xs,md){
+                padding: 0 $gutter;
+            }
+            @include mediaMaxWidth(xs){
+                padding: 0 $gutter/2;
+            }
+        }
+        .crp_title {
+            @include getStylesBreakpoints($h3);
+            display: block;
+            font-weight: $text-bold;
+            margin: 0 0 1rem;
+        }
+        .crp_excerpt {
+            color: $medium_gray;
+            display: block;
+            font-size: rem(24);
+            line-height: (32/24);
+            
+            @include mediaMaxWidth($mobileBreakpoint){
+                font-size: rem(16);
+                line-height: $general_lineHeight;
+            }
+        }
+    }
+}
