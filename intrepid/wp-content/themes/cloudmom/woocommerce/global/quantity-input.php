@@ -23,7 +23,7 @@ $label = ! empty( $args['product_name'] ) ? sprintf( esc_html__( '%s quantity', 
 		<?php echo esc_html__( 'Quantity', 'woocommerce' ); ?>
 	</label>
 	
-	<div class="quantity__controls">
+	<div class="quantity__controls flex">
 		<button 
 			type="button" 
 			class="quantity__button quantity__button--minus" 
