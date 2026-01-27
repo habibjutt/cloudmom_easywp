@@ -67,30 +67,71 @@
 
     document.addEventListener("DOMContentLoaded", function(){
         if ( document.getElementsByClassName('sidebar').length>0 ){
+            // Handle parent category toggles
             [].forEach.call(document.querySelectorAll('.sidebar__item--parent > .sidebar__parent'), function(item){
                 item.addEventListener('click', function(event){
-                    if ( event.target.classList.contains('sidebar__parent') ){
-                        const currentLevel = event.target.dataset.parent;
-                        const currentItem = event.target.closest('.sidebar__item');
-                        const currentItemSublist = event.target.nextElementSibling;
+                    // Prevent default link behavior for parent links when clicking toggle area
+                    if ( event.target.classList.contains('sidebar__toggle') || 
+                         event.target.classList.contains('sidebar__parent') ) {
+                        
+                        // Allow link clicks to navigate
+                        if ( event.target.classList.contains('sidebar__parent-link') || 
+                             event.target.tagName === 'A' ) {
+                            return; // Let the link work normally
+                        }
+                        
+                        event.preventDefault();
+                        event.stopPropagation();
+                        
+                        const currentLevel = this.dataset.parent;
+                        const currentItem = this.closest('.sidebar__item');
+                        const currentItemSublist = this.nextElementSibling;
                         
                         if ( currentItem.classList.contains('sidebar__item--active') ){
                             sidebarCloseSublist(currentItem, currentItemSublist);
+                            this.setAttribute('aria-expanded', 'false');
                         } else {
                             sidebarCloseActiveItem(currentLevel);
                             sidebarOpenSublist(currentItem, currentItemSublist, currentLevel);
+                            this.setAttribute('aria-expanded', 'true');
                         }
+                    }
+                });
+
+                // Handle keyboard accessibility
+                item.addEventListener('keydown', function(event){
+                    if ( event.key === 'Enter' || event.key === ' ' ) {
+                        event.preventDefault();
+                        this.click();
                     }
                 });
             });
 
+            // Handle mobile select toggle
             [].forEach.call(document.querySelectorAll('.sidebar__select'), function(item){
                 item.addEventListener('click', function(event){
                     const currentItem = event.target;
                     const currentItemSublist = currentItem.nextElementSibling;
+                    const isExpanded = currentItemSublist.classList.contains('sidebar__list--active');
 
                     currentItemSublist.classList.toggle('sidebar__list--active');
+                    currentItem.setAttribute('aria-expanded', !isExpanded);
                 });
+            });
+
+            // Auto-expand sublists that are marked as open on page load
+            [].forEach.call(document.querySelectorAll('.sidebar__sublist--open'), function(sublist){
+                const parentItem = sublist.closest('.sidebar__item');
+                if ( parentItem ){
+                    parentItem.classList.add('sidebar__item--active');
+                    sublist.classList.add('sidebar__sublist--active');
+                    sublist.style.maxHeight = sublist.scrollHeight + 'px';
+                    
+                    const parentToggle = parentItem.querySelector('.sidebar__parent');
+                    if ( parentToggle ){
+                        parentToggle.setAttribute('aria-expanded', 'true');
+                    }
+                }
             });
         }
     });

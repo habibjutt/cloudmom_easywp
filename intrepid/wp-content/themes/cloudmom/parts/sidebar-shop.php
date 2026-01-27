@@ -4,12 +4,77 @@
  * Displays product categories in a tree structure and product filters
  */
 
-// Get all product categories
-$product_categories = get_terms( array(
-    'taxonomy'   => 'product_cat',
-    'hide_empty' => true,
-    'parent'     => 0,
-) );
+/**
+ * Recursive function to display product category tree
+ * 
+ * @param int    $parent_id  Parent category ID
+ * @param int    $depth      Current depth level
+ * @param int    $current_term_id Current viewing category ID
+ */
+function display_product_category_tree( $parent_id = 0, $depth = 1, $current_term_id = 0 ) {
+    $categories = get_terms( array(
+        'taxonomy'   => 'product_cat',
+        'hide_empty' => true,
+        'parent'     => $parent_id,
+        'orderby'    => 'name',
+        'order'      => 'ASC',
+    ) );
+
+    if ( empty( $categories ) || is_wp_error( $categories ) ) {
+        return;
+    }
+
+    foreach ( $categories as $category ) {
+        // Check if this category has children
+        $child_categories = get_terms( array(
+            'taxonomy'   => 'product_cat',
+            'hide_empty' => true,
+            'parent'     => $category->term_id,
+        ) );
+        
+        $has_children = ! empty( $child_categories ) && ! is_wp_error( $child_categories );
+        $is_current = ( $current_term_id === $category->term_id );
+        $is_parent_of_current = is_tax( 'product_cat' ) && term_is_ancestor_of( $category->term_id, $current_term_id, 'product_cat' );
+        
+        // Determine if we should show children by default (if current category or ancestor)
+        $show_children = $is_current || $is_parent_of_current;
+        
+        echo '<li class="sidebar__item' . ( $has_children ? ' sidebar__item--parent' : '' ) . ( $is_current ? ' sidebar__item--current' : '' ) . '" data-item="' . esc_attr( $depth ) . '">';
+        
+        if ( $has_children ) {
+            // Parent category with children - show as expandable
+            echo '<span class="sidebar__parent" data-parent="' . esc_attr( $depth ) . '" role="button" tabindex="0" aria-expanded="' . ( $show_children ? 'true' : 'false' ) . '">';
+            echo '<a href="' . esc_url( get_term_link( $category ) ) . '" class="sidebar__parent-link">';
+            echo esc_html( $category->name );
+            echo '</a>';
+            echo '<span class="sidebar__count">' . esc_html( $category->count ) . '</span>';
+            echo '<span class="sidebar__toggle" aria-label="Toggle subcategories"></span>';
+            echo '</span>';
+            
+            // Recursively display children
+            echo '<ul class="sidebar__list sidebar__list--nested sidebar__sublist' . ( $show_children ? ' sidebar__sublist--open' : '' ) . '" data-list="' . esc_attr( $depth + 1 ) . '">';
+            display_product_category_tree( $category->term_id, $depth + 1, $current_term_id );
+            echo '</ul>';
+        } else {
+            // Leaf category - just a link
+            echo '<a class="sidebar__link" href="' . esc_url( get_term_link( $category ) ) . '">';
+            echo esc_html( $category->name );
+            echo '<span class="sidebar__count">' . esc_html( $category->count ) . '</span>';
+            echo '</a>';
+        }
+        
+        echo '</li>';
+    }
+}
+
+// Get current category if on a category page
+$current_term_id = 0;
+if ( is_tax( 'product_cat' ) ) {
+    $current_term = get_queried_object();
+    if ( $current_term && isset( $current_term->term_id ) ) {
+        $current_term_id = $current_term->term_id;
+    }
+}
 
 ?>
 
@@ -20,68 +85,9 @@ $product_categories = get_terms( array(
         Select a Category
     </button>
 
-    <?php if ( ! empty( $product_categories ) && ! is_wp_error( $product_categories ) ) : ?>
-        <ul class="sidebar__list" data-list="1" id="category-list">
-            <?php foreach ( $product_categories as $category ) :
-                $child_categories = get_terms( array(
-                    'taxonomy'   => 'product_cat',
-                    'hide_empty' => true,
-                    'parent'     => $category->term_id,
-                ) );
-                ?>
-                
-                <li class="sidebar__item <?php echo ! empty( $child_categories ) ? 'sidebar__item--parent' : ''; ?>" data-item="1">
-                    <?php if ( ! empty( $child_categories ) ) : ?>
-                        <span class="sidebar__parent" data-parent="1" role="button" tabindex="0" aria-expanded="false">
-                            <?php echo esc_html( $category->name ); ?>
-                            <span class="sidebar__count"><?php echo esc_html( $category->count ); ?></span>
-                        </span>
-                        
-                        <ul class="sidebar__list sidebar__list--nested sidebar__sublist" data-list="2">
-                            <?php foreach ( $child_categories as $child_category ) :
-                                $grandchild_categories = get_terms( array(
-                                    'taxonomy'   => 'product_cat',
-                                    'hide_empty' => true,
-                                    'parent'     => $child_category->term_id,
-                                ) );
-                                ?>
-                                
-                                <li class="sidebar__item <?php echo ! empty( $grandchild_categories ) ? 'sidebar__item--parent' : ''; ?>" data-item="2">
-                                    <?php if ( ! empty( $grandchild_categories ) ) : ?>
-                                        <span class="sidebar__parent" data-parent="2" role="button" tabindex="0" aria-expanded="false">
-                                            <?php echo esc_html( $child_category->name ); ?>
-                                            <span class="sidebar__count"><?php echo esc_html( $child_category->count ); ?></span>
-                                        </span>
-                                        
-                                        <ul class="sidebar__list sidebar__list--nested sidebar__sublist" data-list="3">
-                                            <?php foreach ( $grandchild_categories as $grandchild_category ) : ?>
-                                                <li class="sidebar__item" data-item="3">
-                                                    <a class="sidebar__link" href="<?php echo esc_url( get_term_link( $grandchild_category ) ); ?>">
-                                                        <?php echo esc_html( $grandchild_category->name ); ?>
-                                                        <span class="sidebar__count"><?php echo esc_html( $grandchild_category->count ); ?></span>
-                                                    </a>
-                                                </li>
-                                            <?php endforeach; ?>
-                                        </ul>
-                                    <?php else : ?>
-                                        <a class="sidebar__link" href="<?php echo esc_url( get_term_link( $child_category ) ); ?>">
-                                            <?php echo esc_html( $child_category->name ); ?>
-                                            <span class="sidebar__count"><?php echo esc_html( $child_category->count ); ?></span>
-                                        </a>
-                                    <?php endif; ?>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    <?php else : ?>
-                        <a class="sidebar__link" href="<?php echo esc_url( get_term_link( $category ) ); ?>">
-                            <?php echo esc_html( $category->name ); ?>
-                            <span class="sidebar__count"><?php echo esc_html( $category->count ); ?></span>
-                        </a>
-                    <?php endif; ?>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-    <?php endif; ?>
+    <ul class="sidebar__list" data-list="1" id="category-list">
+        <?php display_product_category_tree( 0, 1, $current_term_id ); ?>
+    </ul>
 
     <?php
     /**
