@@ -8,9 +8,9 @@
 get_header(); ?>
 
 <div class="woocommerce-page">
-    <div class="container container--jc-center archive-feed__container">
+    <div class="container archive-feed__container">
         <?php if ( is_shop() || is_product_category() || is_product_tag() || is_product_taxonomy() ) : ?>
-            <div class="archive-feed__wrap col col--12 flex">
+            <div class="shop-page-layout">
                 <aside class="col col--3 col--lg-3 col--md-12 col--sm-12 col--xs-12 archive-feed__sidebar" role="complementary" aria-label="Product filters">
                     <?php get_template_part( 'parts/sidebar-shop' ); ?>
                 </aside>
