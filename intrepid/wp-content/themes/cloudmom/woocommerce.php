@@ -5,6 +5,13 @@
  * This template is used for all WooCommerce pages (shop, cart, checkout, account, etc.)
  */
 
+// Build page-specific class for scoped CSS targeting
+$woo_page_class = 'woocommerce-content-wrapper';
+if ( is_cart() )           $woo_page_class .= ' cm-cart-page';
+if ( is_checkout() )       $woo_page_class .= ' cm-checkout-page';
+if ( is_product() )        $woo_page_class .= ' cm-single-product-page';
+if ( is_account_page() )   $woo_page_class .= ' cm-account-page';
+
 get_header(); ?>
 
 <div class="woocommerce-page">
@@ -20,7 +27,7 @@ get_header(); ?>
                 </main>
             </div>
         <?php else : ?>
-            <div class="woocommerce-content-wrapper">
+            <div class="<?php echo esc_attr( $woo_page_class ); ?>">
                 <?php woocommerce_content(); ?>
             </div>
         <?php endif; ?>
