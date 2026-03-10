@@ -340,6 +340,14 @@ a.button.product_type_variable.add_to_cart_button svg {
    SINGLE PRODUCT PAGE
    ===================================================================== */
 
+/* Fix: archive-feed__container is display:flex but content wrapper has flex-grow:0.
+   Make single-product page wrapper expand to fill container so tabs and related
+   products don't leave a large empty space on the right. */
+body.single-product .woocommerce-content-wrapper {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
 /* Two-column layout: gallery left (50%) + summary right */
 .single-product__container {
     display: flex;
@@ -496,9 +504,147 @@ button.quantity__button:hover {
     margin-bottom: 20px;
 }
 
+/* =====================================================================
+   SINGLE PRODUCT — SALE BADGE & REVIEWS
+   ===================================================================== */
+
+/* Hide the duplicate .onsale badge that is a direct child of .single-product__gallery
+   (WooCommerce already shows one inside .woocommerce-product-gallery__main — keep that one) */
+body.single-product .single-product__gallery > span.onsale {
+    display: none !important;
+}
+
+/* Reviews section heading */
+body.single-product .woocommerce-Reviews-title,
+body.single-product #reviews h2.woocommerce-Reviews-title {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #414141 !important;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+}
+
+/* "No reviews yet" / intro text */
+body.single-product #reviews #comments p {
+    color: #8f8a8c;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+/* Review form wrapper spacing */
+body.single-product #review_form_wrapper,
+body.single-product .comment-respond {
+    margin-top: 20px;
+}
+
+/* Stars (rating picker) — brand purple */
+body.single-product p.stars a,
+body.single-product p.stars a::before {
+    color: #6e3264 !important;
+}
+body.single-product p.stars a:hover,
+body.single-product p.stars a:hover ~ a,
+body.single-product p.stars.selected a.active,
+body.single-product p.stars.selected a.active ~ a,
+body.single-product p.stars.selected a:not(.active) {
+    color: #6e3264 !important;
+}
+
+/* Existing review star ratings display */
+body.single-product .star-rating span::before,
+body.single-product .star-rating::before {
+    color: #6e3264 !important;
+}
+
+/* Review form labels */
+body.single-product .comment-form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #414141;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Review form inputs and textarea */
+body.single-product .comment-form input[type="text"],
+body.single-product .comment-form input[type="email"],
+body.single-product .comment-form textarea#comment {
+    border: 1px solid #e2d0df !important;
+    border-radius: 8px !important;
+    padding: 12px 16px !important;
+    font-size: 15px !important;
+    color: #414141 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+body.single-product .comment-form textarea#comment {
+    min-height: 130px !important;
+    resize: vertical !important;
+}
+body.single-product .comment-form input[type="text"]:focus,
+body.single-product .comment-form input[type="email"]:focus,
+body.single-product .comment-form textarea#comment:focus {
+    border-color: #6e3264 !important;
+    box-shadow: 0 0 0 2px rgba(110, 50, 100, 0.12) !important;
+}
+
+/* Submit review button */
+body.single-product .comment-form .form-submit #submit,
+body.single-product .comment-form .form-submit input[type="submit"] {
+    background: #6e3264 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 14px 32px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    transition: background 0.2s ease !important;
+    display: inline-block !important;
+}
+body.single-product .comment-form .form-submit #submit:hover,
+body.single-product .comment-form .form-submit input[type="submit"]:hover {
+    background: #5a2950 !important;
+}
+
+/* Review list items (when there ARE reviews) */
+body.single-product .woocommerce-Reviews #reviews #comments ol.commentlist {
+    padding: 0 !important;
+    margin: 0 0 24px !important;
+    list-style: none !important;
+}
+body.single-product .woocommerce-Reviews .comment_container {
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0edf0;
+}
+body.single-product .woocommerce-Reviews .comment-text {
+    flex: 1;
+    border: 1px solid #e2d0df !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    background: #faf8fa !important;
+}
+body.single-product .woocommerce-Reviews .comment-text p.meta {
+    font-size: 13px;
+    color: #8f8a8c;
+    margin-bottom: 8px;
+}
+body.single-product .woocommerce-Reviews .comment-text .description p {
+    font-size: 15px;
+    color: #414141;
+    line-height: 1.6;
+}
+
 
 /* =====================================================================
-   CART PAGE (WooCommerce Cart Block) — scoped to body.woocommerce-cart
+   CART PAGE(WooCommerce Cart Block) — scoped to body.woocommerce-cart
    ===================================================================== */
 
 /* Cart table — full width (don't override .wc-block-cart__main width — breaks flex layout) */
