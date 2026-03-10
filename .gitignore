@@ -137,3 +137,5 @@ Desktop.ini
 *.sql
 *.sqlite
 *.db
+
+wp-config.php
