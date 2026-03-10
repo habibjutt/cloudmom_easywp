@@ -738,11 +738,41 @@ body.woocommerce-cart a.wc-block-cart__submit-button:hover {
     box-shadow: 0 0 0 3px rgba(110, 50, 100, 0.1) !important;
 }
 
+/* Floating label — when field is filled/active push label to top and value down */
+body.woocommerce-checkout .wc-block-components-text-input label {
+    transition: top 0.15s, font-size 0.15s, transform 0.15s, color 0.15s !important;
+}
+body.woocommerce-checkout .wc-block-components-text-input.is-active label,
+body.woocommerce-checkout .wc-block-components-text-input.has-error label {
+    top: 4px !important;
+    font-size: 11px !important;
+    transform: none !important;
+    color: #8f8a8c !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.03em !important;
+}
+body.woocommerce-checkout .wc-block-components-text-input.is-active input,
+body.woocommerce-checkout .wc-block-components-text-input.is-active select,
+body.woocommerce-checkout .wc-block-components-text-input.has-error input {
+    padding-top: 22px !important;
+    padding-bottom: 4px !important;
+}
+
 /* Radio / checkbox labels */
 .wc-block-checkout .wc-block-components-radio-control__option-layout,
 .wc-block-checkout .wc-block-components-checkbox {
     font-size: 14px;
     color: #414141;
+}
+
+/* Fix radio/checkbox text hidden behind input — push text past the absolutely-positioned control */
+body.woocommerce-checkout .wc-block-components-radio-control__option-layout {
+    padding-left: 28px !important;
+}
+body.woocommerce-checkout .wc-block-components-checkbox .wc-block-components-checkbox__input + span,
+body.woocommerce-checkout .wc-block-components-checkbox label {
+    padding-left: 28px !important;
+    display: inline-block !important;
 }
 
 /* Payment options box */
