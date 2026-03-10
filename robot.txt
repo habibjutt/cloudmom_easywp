@@ -1,0 +1,20 @@
+User-agent: kinsta-bot
+Disallow: /
+
+User-agent: YandexImages
+Disallow: /
+
+User-agent: trendictionbot
+Disallow: /
+
+User-agent: trendiction
+Disallow: /
+
+User-agent: bingbot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
