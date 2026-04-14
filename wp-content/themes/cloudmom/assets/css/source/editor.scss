@@ -1,0 +1,94 @@
+/************ Base styling ************/
+$html_fontSize: 16px;
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/fonts';
+
+
+/*** Typography ***/
+body {
+    color: $general_color;
+    font-family: $general_font;
+    font-size: $general_fontSize;
+    line-height: $general_lineHeight;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+p {
+    color: inherit;
+    margin: 0 0 $general_margin;
+
+    &:last-child { margin-bottom: 0 !important; }
+}
+a {
+    transition: all $global_transition;
+    
+    &::before,
+    &::after { transition: all $global_transition; }
+
+    &:not([class]),
+    &[class=""] {
+        color: $general_linkColor;
+
+        &:hover,
+        &:focus {
+            @include mediaMinWidth($mobileBreakpoint){
+                color: $general_linkColorHover;
+            }
+        }
+    }
+}
+
+
+/*** Headings ***/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $text-bold;
+    margin: 0 0 $general_margin;
+}
+h1 {
+    @include getStylesBreakpoints($h1);
+}
+h2 {
+    @include getStylesBreakpoints($h2);
+}
+h3 {
+    @include getStylesBreakpoints($h3);
+}
+h4 {
+    @include getStylesBreakpoints($h4);
+}
+h5 {
+    @include getStylesBreakpoints($h5);
+}
+h6 {
+    @include getStylesBreakpoints($h6);
+}
+
+
+/*** Lists ***/
+ol, ul {
+    color: inherit;
+    margin-bottom: $general_margin;
+    margin-top: $general_margin;
+    padding: 0 0 0 1.25em;
+    
+    ol, ul {
+        font-size: inherit;
+        margin-bottom: $general_margin/2;
+        margin-top: $general_margin/2;
+    }
+    li {
+        margin: 0;
+    }
+}
+dl {
+    margin-bottom: $general_margin;
+    margin-top: $general_margin;
+
+    dt { margin: $general_margin/2 0; }
+    dd {
+        margin: 0 0 0 $general_margin*2;
+    }
+}

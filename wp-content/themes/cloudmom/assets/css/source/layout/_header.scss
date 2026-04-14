@@ -1,0 +1,268 @@
+/**
+ * Header
+ */
+
+.header {
+    $h: &;
+
+    background: $light_blue;
+    box-shadow: 0px 3px 20px rgba($black, .1);
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    &__container {
+        align-items: center;
+        background: inherit;
+        flex-flow: row nowrap;
+        height: map-get($header_height, 'default');
+        position: relative;
+    
+        @include mediaMaxWidth($mobileBreakpoint){
+            height: map-get($header_height, $mobileBreakpoint);
+        }
+    }
+    &__toggle {
+        @include mediaMinWidth($mobileBreakpoint){
+            display: none !important;
+        }
+        @include mediaMaxWidth($mobileBreakpoint){
+            flex: 1 0 auto;
+            line-height: 0;
+            max-width: calc(50% - #{map-get($header_logoWidth, $mobileBreakpoint)/2 + $gutter/2});
+            order: 3;
+            text-align: right;
+        }
+    }
+    &__logo {
+        flex: 0 0 #{map-get($header_logoWidth,'default') + $gutter};
+        max-width: #{map-get($header_logoWidth,'default') + $gutter};
+
+        @include mediaMaxWidth($mobileBreakpoint){
+            flex: 0 0 #{map-get($header_logoWidth,$mobileBreakpoint) + $gutter};
+            line-height: 0;
+            max-width: #{map-get($header_logoWidth,$mobileBreakpoint) + $gutter};
+            order: 2;
+        }
+
+        .logo {
+            display: inline-block;
+            
+            &__image {
+                width: map-get($header_logoWidth,'default');
+
+                @include mediaMaxWidth($mobileBreakpoint){
+                    width: map-get($header_logoWidth, $mobileBreakpoint);
+                }
+            }
+        }
+    }
+    &__menu {
+        @include mediaMinWidth($mobileBreakpoint){
+            display: flex;
+            flex-flow: row nowrap;
+            height: inherit !important;
+            justify-content: center;
+        }
+        @include mediaMaxWidth($mobileBreakpoint){
+            background: $light_blue;
+            border-top: 1px solid $shade_blue;
+            height: calc(100vh - #{map-get($header_height, $mobileBreakpoint)});
+            left: 0;
+            max-width: none;
+            opacity: 0;
+            overflow-y: scroll;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            transition: opacity $header_menuTransition, visibility $header_menuTransition;
+            visibility: hidden;
+            z-index: 1000;
+        }
+    }
+    &__search-trigger {
+        flex: 0 0 #{40px + $gutter};
+        max-width: #{40px + $gutter};
+
+        @include mediaMaxWidth($mobileBreakpoint){
+            flex: 1 0 auto;
+            max-width: calc(50% - #{map-get($header_logoWidth, $mobileBreakpoint)/2 + $gutter/2});
+            order: 1;
+        }
+    }
+    &__search {
+        background: $light_blue;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height $global_transition;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 100%;
+        }
+        &::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+
+            @include mediaMaxWidth($mobileBreakpoint){
+                height: 20px;
+            }
+        }
+        .search-form {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+    }
+
+    body.admin-bar & {
+        top: 32px;
+
+        @media screen and (max-width: 782px) { top: 46px; }
+        @media screen and (max-width: 600px) { top: 0; }
+    }
+    body.menu-active & {
+        #{$h}__menu {
+            opacity: 1;
+            visibility: visible;
+        }
+        .toggle {
+            &::before {
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
+            }
+            &::after {
+                bottom: 50%;
+                transform: translateY(50%) rotate(-45deg);
+            }
+            &__stick {
+                left: 50%;
+                width: 0;
+            }
+        }
+    }
+    body.search-active & {
+        .search-trigger {
+            background: $white;
+    
+            &::before,
+            &::after {
+                border-color: $magenta;
+                border-width: 2px 0 0 0;
+                bottom: auto;
+                height: 0;
+                left: 9px;
+                margin-top: -1px;
+                right: auto;
+                top: 50%;
+                width: 23px;
+            }
+            &::before {
+                border-radius: 0;
+                transform: rotate(-45deg);
+            }
+            &::after {
+                transform: rotate(45deg);
+            }
+    
+            &:hover,
+            &:focus {
+                @include mediaMinWidth($mobileBreakpoint){
+                    background: $magenta;
+        
+                    &::before,
+                    &::after {
+                        border-color: $white;
+                    }
+                }
+            }
+        }
+    }
+    body.type-pregnancy & {
+        box-shadow: none;
+    }
+}
+
+
+.toggle {
+    background: transparent;
+    border: none;
+    height: 19px;
+    padding: 0;
+    position: relative;
+    width: 25px;
+    
+    &::before,
+    &::after,
+    &__stick {
+        background-color: $plum;
+        border-radius: 2px;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 0;
+        position: absolute;
+        transition: all $global_transition;
+        width: 100%;
+    }
+    &::before {
+        top: 0;
+    }
+    &::after {
+        bottom: 0;
+    }
+    &__stick {
+        top: 8px;
+    }
+}
+
+
+.search-trigger {
+    border-radius: 100%;
+    display: block;
+    height: 40px;
+    position: relative;
+    width: 40px;
+
+    &::before,
+    &::after {
+        border-color: $plum;
+        border-style: solid;
+        content: '';
+        display: block;
+        position: absolute;
+        transition: border-color $global_transition;
+        z-index: 1;
+    }
+    &::before {
+        border-radius: 100%;
+        border-width: 2px;
+        height: 18px;
+        left: 8px;
+        top: 8px;
+        width: 18px;
+    }
+    &::after {
+        border-width: 3px 0 0 0;
+        bottom: 9px;
+        height: 0;
+        right: 9px;
+        transform: rotate(45deg) translateY(-3px);
+        width: 10px;
+    }
+
+    &:hover,
+    &:focus {
+        @include mediaMinWidth($mobileBreakpoint){
+            &::before,
+            &::after {
+                border-color: $magenta;
+            }
+        }
+    }
+}

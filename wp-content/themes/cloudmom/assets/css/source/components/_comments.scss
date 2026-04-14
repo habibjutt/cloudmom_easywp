@@ -1,0 +1,165 @@
+/**
+ * Comments
+ */
+
+
+// Comments section
+.comments {
+    margin-bottom: 80px;
+    margin-top: 105px;
+
+    @include mediaMaxWidth(md){
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+
+    &__title {
+        color: $medium_gray;
+        font-size: rem(28);
+        letter-spacing: .2em;
+        line-height: (34/28);
+        margin: 0 0 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        color: $general_color;
+        margin: 0 0 20px;
+    }
+    .comment-reply-title {
+        font-weight: $text-normal;
+        margin: 20px 0 20px;
+    }
+    .akismet_comment_form_privacy_notice {
+        display: none !important;
+    }
+}
+
+
+// Comment form
+.comment-form {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 #{$gutter/-2} 50px;
+
+    > * {
+        padding-left: #{$gutter/2};
+        padding-right: #{$gutter/2};
+    }
+    .comment-notes,
+    .comment-form-comment,
+    .form-submit {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .comment-form-author,
+    .comment-form-email {
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        @include mediaMaxWidth(sm){
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    .comment-notes {
+        @include getStyles($small);
+        color: $medium_gray;
+        display: none !important;
+        line-height: (20/14);
+        order: 1;
+    }
+    .comment-form-author {
+        margin: 0 0 20px;
+        order: 2;
+    }
+    .comment-form-email {
+        margin: 0 0 20px;
+        order: 3;
+    }
+    .comment-form-comment {
+        margin: 0 0 $gutter;
+        order: 4;
+    }
+    .form-submit {
+        margin: 0;
+        order: 5;
+        text-align: right;
+
+        .button {
+            box-shadow: 0px 3px 6px rgba(black, .25);
+        }
+    }
+    .comment-form-cookies-consent {
+        display: none !important;
+    }
+}
+
+
+// Single comment
+.comment {
+    &__header {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 30px;
+    }
+    &__author {
+        color: #024AA6;
+        font-size: rem(18);
+        line-height: $general_lineHeight;
+        margin: 0 0 7px;
+    }
+    &__date {
+        color: $medium_gray;
+        font-size: rem(18);
+        line-height: $general_lineHeight;
+        margin: 0 0 7px 20px;
+    }
+    &__moderation {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    &__content {
+        @include getStyles($small);
+        line-height: (20/14);
+    }
+    &__footer {
+        margin-bottom: 35px;
+    }
+    &__reply {
+        margin-top: 10px;
+        text-align: right;
+
+        a {
+            @include getStyles($small);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25.774' height='25.774' viewBox='0 0 25.774 25.774'%3E%3Cpath d='M-9026.113,114.774a12.806,12.806,0,0,1-9.113-3.775,12.8,12.8,0,0,1-3.773-9.112,12.8,12.8,0,0,1,3.773-9.112A12.806,12.806,0,0,1-9026.113,89,12.8,12.8,0,0,1-9017,92.775a12.8,12.8,0,0,1,3.775,9.112A12.8,12.8,0,0,1-9017,111,12.8,12.8,0,0,1-9026.113,114.774Zm-1.719-12.114h0c4.311,0,7.313,1.392,9.449,4.38a12.782,12.782,0,0,0-2.793-6.013,10.523,10.523,0,0,0-6.657-3.437V94.154l-6.015,6.016,6.015,6.014v-3.522Z' transform='translate(9039 -89)' fill='%23707070' /%3E%3C/svg%3E%0A");
+            background-position: 100% 50%;
+            background-repeat: no-repeat;
+            background-size: 26px 26px;
+            color: $general_linkColor;
+            line-height: (20/14);
+            padding: 5px 40px 5px 0;
+            position: relative;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                @include mediaMinWidth($mobileBreakpoint){
+                    color: $general_linkColorHover;
+                }
+            }
+        }
+    }
+
+    & + &,
+    & & {
+        border-top: 1px solid $general_borderColor;
+    }
+    & > & {
+        padding-left: 40px;
+
+        @include mediaMaxWidth(sm){
+            padding-left: 30px;
+        }
+    }
+}

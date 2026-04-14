@@ -1,0 +1,22 @@
+/**
+ * Section / Press
+ */
+
+.section-press {
+    margin: 80px 0;
+
+    &__item {
+        margin-bottom: 120px;
+        
+        @include mediaBetween(sm,lg){
+            margin-bottom: 100px;
+        }
+        @include mediaMaxWidth(sm){
+            margin-bottom: 80px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

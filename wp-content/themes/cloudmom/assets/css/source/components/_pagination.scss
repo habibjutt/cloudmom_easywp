@@ -1,0 +1,115 @@
+/**
+ * Pagination
+ */
+
+.pagination {
+    margin: 60px 0 15px;
+
+    .nav-links {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 -5px;
+    }
+    .page-numbers {
+        color: $plum;
+        display: inline-block;
+        font-size: rem(20);
+        font-weight: $text-bold;
+        line-height: (32/20);
+        min-width: 35px;
+        margin: 2px;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        transition: all $global_transition;
+
+        &:hover,
+        &:focus {
+            @include mediaMinWidth($mobileBreakpoint){
+                color: $general_linkColorHover;
+                text-decoration: underline;
+            }
+        }
+        &.prev,
+        &.next {
+            background-color: $white;
+            border: 3px solid $accent_pink;
+            border-radius: 40px;
+            color: $plum;
+            font-size: $general_fontSize;
+            font-weight: $text-bold;
+            letter-spacing: .1em;
+            line-height: $general_lineHeight;
+            min-width: 250px;
+            padding: 18px 40px 17px;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background $global_transition, border-color $global_transition, box-shadow $global_transition, color $global_transition;
+
+            @include mediaMaxWidth($mobileBreakpoint){
+                font-size: rem(14);
+                letter-spacing: .05em;
+                min-width: 185px;
+                padding: 19px 20px;
+            }
+            @include mediaMaxWidth(sm){
+                display: none;
+            }
+
+            &:hover,
+            &:focus {
+                @include mediaMinWidth($mobileBreakpoint){
+                    background-color: $plum;
+                    border-color: $plum;
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+            &.disabled {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &.prev {
+            margin-right: auto;
+            
+            &::before {
+                border-style: solid;
+                border-width: 0 0 2px 2px;
+                content: '';
+                display: inline-block;
+                height: 9px;
+                margin: -3px 10px 0 0;
+                transform: rotate(45deg);
+                transition: none;
+                vertical-align: middle;
+                width: 9px;
+                z-index: 1;
+            }
+        }
+        &.next {
+            margin-left: auto;
+
+            &::after {
+                border-style: solid;
+                border-width: 2px 2px 0 0;
+                content: '';
+                display: inline-block;
+                height: 9px;
+                margin: -3px 0 0 10px;
+                transform: rotate(45deg);
+                transition: none;
+                vertical-align: middle;
+                width: 9px;
+                z-index: 1;
+            }
+        }
+        &.current {
+            pointer-events: none;
+            text-decoration: underline;
+        }
+    }
+}

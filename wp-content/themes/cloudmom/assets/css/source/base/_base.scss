@@ -1,0 +1,54 @@
+/**
+ * Base 
+ */
+ 
+*::-webkit-media-controls-panel {
+    display: none!important;
+    -webkit-appearance: none;
+}
+*::--webkit-media-controls-play-button {
+    display: none!important;
+    -webkit-appearance: none;
+}
+*::-webkit-media-controls-start-playback-button {
+    display: none!important;
+    -webkit-appearance: none;
+}
+
+::selection {
+	background: $medium_gray;
+	color: $white;
+}
+
+#wpadminbar * {
+    min-width: 0;
+}
+html {
+    color: $general_color;
+    font-family: $general_font;
+    font-size: $general_fontSize;
+    height: 100%;
+    line-height: $general_lineHeight;
+}
+body {
+    word-wrap: break-word;
+
+    * {
+        outline: none;
+    }
+    &.menu-active {
+        overflow: hidden;
+    }
+}
+.site {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    
+    body.admin-bar & {
+        min-height: calc(100vh - 32px);
+
+        @media screen and (max-width: 782px) { min-height: calc(100vh - 46px); }
+        @media screen and (max-width: 600px) { min-height: 100vh; }
+    }
+}

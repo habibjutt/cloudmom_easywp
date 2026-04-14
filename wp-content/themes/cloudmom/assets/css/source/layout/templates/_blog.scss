@@ -1,0 +1,18 @@
+/**
+ * Blog
+ */
+
+.feed {
+    padding-bottom: 60px;
+    padding-top: 75px;
+
+    &__title {
+        border-bottom: 1px solid $general_borderColor;
+        margin-bottom: 60px;
+        padding-bottom: 15px;
+    }
+    &__item {
+        padding-bottom: #{$gutter/2};
+        padding-top: #{$gutter/2};
+    }
+}

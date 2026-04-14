@@ -1,0 +1,91 @@
+/**
+ * Section / Intro
+ */
+
+.section-intro {
+    margin: 50px auto;
+    max-width: 1098px;
+
+    @include mediaMaxWidth(sm){
+        margin: 0;
+    }
+
+    &__container {
+        align-items: center;
+
+        @include mediaMinWidth(lg){
+            margin: 0 #{$gutter/2 - 25px};
+
+            .col {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+    &__image {
+        height: 100%;
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+
+        @include mediaMaxWidth(sm){
+            margin: 0 #{$gutter/-2};
+        }
+
+        img {
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            top: 0;
+            transition: opacity $global_transition, transform $global_transition;
+            width: 100%;
+        }
+    }
+    &__content {
+        padding-bottom: 40px;
+        padding-top: 40px;
+
+        @include mediaMaxWidth(sm){
+            margin-left: auto;
+            margin-right: auto;
+            max-width: map-get($contentWidth, sm);
+        }
+        @include mediaMaxWidth(xs){
+            margin-left: auto;
+            margin-right: auto;
+            max-width: map-get($contentWidth, xs);
+        }
+    }
+    &__title {
+        color: $medium_gray;
+        font-size: rem(20);
+        letter-spacing: .2em;
+        line-height: (24/20);
+        text-transform: uppercase;
+        
+        @include mediaMaxWidth($mobileBreakpoint){
+            font-size: rem(14);
+            line-height: (17/14);
+        }
+    }
+    &__subtitle {
+        font-size: rem(42);
+        font-weight: $text-bold;
+        line-height: (48/42);
+
+        @include mediaMaxWidth($mobileBreakpoint){
+            font-size: rem(28);
+            line-height: (34/28);
+        }
+    }
+    &__text {
+        color: $medium_gray;
+
+        @include mediaMinWidth($mobileBreakpoint){
+            font-size: rem(22);
+            line-height: (32/22);
+        }
+    }
+}
