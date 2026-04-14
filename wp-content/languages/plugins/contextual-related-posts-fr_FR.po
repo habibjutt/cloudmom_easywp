@@ -1,0 +1,259 @@
+# Translation of Plugins - Contextual Related Posts - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Contextual Related Posts - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-02-23 11:10:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Contextual Related Posts - Stable (latest release)\n"
+
+#: includes/admin/class-metabox.php:227
+msgid "You have Top 10 WordPress Plugin installed. If you are trying to modify the thumbnail, then you'll need to make the same change in the Top 10 meta box on this page."
+msgstr "Vous avez installé l'extension WordPress Top 10. Si vous essayez de modifier la miniature, alors vous aurez besoin de faire le même changement dans la boîte méta Top 10 sur cette page."
+
+#: includes/admin/settings/sidebar.php:23
+msgid "Quick links"
+msgstr "Liens rapides"
+
+#: includes/admin/settings/sidebar.php:45
+msgid "Reviews"
+msgstr "Avis"
+
+#: includes/admin/settings/sidebar.php:48
+msgid "Github repository"
+msgstr "Dépôt Github"
+
+#: includes/admin/settings/sidebar.php:51
+msgid "Ajay's blog"
+msgstr "Blog de Ajay"
+
+#: includes/admin/settings/class-settings.php:448
+msgid "No related posts found"
+msgstr "Aucun article relatif trouvé."
+
+#: includes/frontend/widgets/class-related-posts-widget.php:31
+msgid "Related Posts [CRP]"
+msgstr "Articles relatifs [CRP]"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:33
+msgid "Display Related Posts"
+msgstr "Afficher les articles relatifs"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:85
+msgid "Title"
+msgstr "Titre"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:90
+msgid "No. of posts"
+msgstr "No. de l'articles"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:100
+msgid " Show excerpt?"
+msgstr "Afficher l'extrait ?"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:105
+msgid " Show author?"
+msgstr "Afficher l'auteur ?"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:110
+msgid " Show date?"
+msgstr "Afficher la date ?"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:116
+msgid "Thumbnails inline, before title"
+msgstr "Miniature avant le titre"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:117
+msgid "Thumbnails inline, after title"
+msgstr "Miniatures après le titre"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:118
+msgid "Only thumbnails, no text"
+msgstr "Que les miniatures, pas de texte"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:119
+msgid "No thumbnails, only text."
+msgstr "Pas de miniature, que le texte"
+
+#: includes/admin/settings/class-settings.php:832
+#: includes/admin/settings/class-settings.php:1002
+#: includes/frontend/widgets/class-related-posts-widget.php:124
+msgid "Thumbnail height"
+msgstr "Hauteur de la miniature"
+
+#: includes/admin/settings/class-settings.php:823
+#: includes/admin/settings/class-settings.php:993
+#: includes/frontend/widgets/class-related-posts-widget.php:129
+msgid "Thumbnail width"
+msgstr "Largeur de la miniature"
+
+#: includes/frontend/class-display.php:731
+msgid " by "
+msgstr " par"
+
+#. Plugin Name of the plugin
+#: contextual-related-posts.php includes/admin/class-bulk-edit.php:82
+#: includes/admin/class-metabox-new.php:75
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/edit.js:89
+msgid "Contextual Related Posts"
+msgstr "Contextual Related Posts"
+
+#. Plugin URI of the plugin
+#: contextual-related-posts.php
+msgid "https://webberzone.com/plugins/contextual-related-posts/"
+msgstr "https://webberzone.com/plugins/contextual-related-posts/"
+
+#. Author of the plugin
+#: contextual-related-posts.php
+msgid "WebberZone"
+msgstr "WebberZone"
+
+#. Author URI of the plugin
+#: contextual-related-posts.php
+msgid "https://webberzone.com"
+msgstr "https://webberzone.com"
+
+#: includes/admin/settings/class-settings.php:1108
+#: includes/admin/settings/class-settings.php:1172
+msgid "Settings"
+msgstr "Réglages"
+
+#: includes/admin/settings/class-settings.php:1128
+msgid "Donate"
+msgstr "Faire un don"
+
+#: includes/admin/settings/class-settings.php:1129
+msgid "Contribute"
+msgstr "Contribuer"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:114
+msgid "Thumbnail options"
+msgstr "Options de la miniature"
+
+#: includes/admin/settings/class-settings.php:244
+msgid "Styles"
+msgstr "Styles"
+
+#: includes/admin/class-tools-page.php:97
+#: includes/admin/class-tools-page.php:99
+msgid "Clear cache"
+msgstr "Nettoyer le cache"
+
+#: includes/admin/settings/class-settings.php:321
+msgid "Posts"
+msgstr "Articles"
+
+#: includes/admin/settings/class-settings.php:322
+msgid "Pages"
+msgstr "Pages"
+
+#: includes/admin/settings/class-settings.php:323
+msgid "Home page"
+msgstr "Page d'accueil"
+
+#: includes/admin/settings/class-settings.php:324
+msgid "Feeds"
+msgstr "Flux"
+
+#: includes/admin/settings/class-settings.php:325
+msgid "Category archives"
+msgstr "Archives de catégorie"
+
+#: includes/admin/settings/class-settings.php:326
+msgid "Tag archives"
+msgstr "Archives d'étiquette"
+
+#: includes/admin/settings/class-settings.php:327
+msgid "Other archives"
+msgstr "Autres archives"
+
+#: includes/admin/settings/class-settings.php:383
+msgid "This will add the Contextual Related Posts metabox on Edit Posts or Add New Posts screens. Also applies to Pages and Custom Post Types."
+msgstr "Cela ajoutera la boîte méta Contextual Related Posts sur \"Modifier les articles\" ou \"Ajouter des écrans de nouveaux articles\". Cela s'applique également aux pages et types de contenu personnalisé."
+
+#: includes/admin/settings/class-settings.php:519
+msgid "Comma separated list of post, page or custom post type IDs. e.g. 188,320,500"
+msgstr "Une liste séparée par des virgules d'IDs d'articles, pages ou types d'articles personnalisés. P.ex. 188,320,500"
+
+#: includes/admin/settings/class-settings.php:489
+msgid "Limit post title length (in characters)"
+msgstr "Limiter la longueur du titre de l'article (en caractères)"
+
+#: includes/admin/settings/class-settings.php:490
+msgid "Any title longer than the number of characters set above will be cut and appended with an ellipsis (&hellip;)"
+msgstr "Tous les titres plus longs que le nombre de caractères définis ci-dessus seront coupés et une ellipse (&hellip;) sera ajoutée."
+
+#: includes/admin/settings/class-settings.php:498
+msgid "Open links in new window"
+msgstr "Ouvrir les liens dans une nouvelle fenêtre"
+
+#: includes/admin/settings/class-settings.php:807
+#: includes/admin/settings/class-settings.php:985
+msgid "Display thumbnails inline with posts, before title"
+msgstr "Afficher les miniatures avec l'article, avant le titre"
+
+#: includes/admin/settings/class-settings.php:808
+#: includes/admin/settings/class-settings.php:986
+msgid "Display thumbnails inline with posts, after title"
+msgstr "Afficher les miniatures avec l'article, après le titre"
+
+#: includes/admin/settings/class-settings.php:809
+#: includes/admin/settings/class-settings.php:987
+msgid "Display only thumbnails, no text"
+msgstr "N'afficher que les miniatures, pas de texte"
+
+#: includes/admin/settings/class-settings.php:883
+msgid "Use default thumbnail?"
+msgstr "Utiliser la miniature par défaut ?"
+
+#: includes/admin/settings/class-settings.php:884
+msgid "If checked, when no thumbnail is found, show a default one from the URL below. If not checked and no thumbnail is found, no image will be shown."
+msgstr "Si coché, quand aucune miniature n'est trouvée, celle par défaut à l'URL ci-dessous est utilisée. Si décoché et qu'aucune miniature n'est trouvée, aucune image ne sera affichée."
+
+#: includes/admin/settings/class-settings.php:1032
+msgid "No styles"
+msgstr "Aucun style"
+
+#: includes/admin/settings/class-settings.php:1033
+msgid "Select this option if you plan to add your own styles"
+msgstr "Sélectionner cette option si vous comptez ajouter vos propres styles."
+
+#: includes/admin/settings/class-settings.php:1037
+msgid "Text only"
+msgstr "Texte seul"
+
+#: includes/admin/class-metabox.php:221
+msgid "Enter the full URL to the image (JPG, PNG or GIF) you'd like to use. This image will be used for the post. It will be resized to the thumbnail size set under Settings &raquo; Related Posts &raquo; Output Options"
+msgstr "Entrer l'URL complète vers l'image (JPG, PNG ou GIF) que vous souhaitez utiliser. Cette image sera utilisée pour l'article. Elle sera redimensionnée en fonction des dimensions réglées dans les réglages des options de sortie"
+
+#: includes/admin/class-metabox.php:222
+msgid "The URL above is saved in the meta field:"
+msgstr "L'URL ci-dessus est sauvegardée dans les champs méta&nbsp;:"
+
+#: includes/admin/class-metabox.php:146
+msgid "Disable Related Posts display:"
+msgstr "Désactiver l'affichage des articles relatifs&nbsp;:"
+
+#: includes/admin/class-metabox.php:149
+msgid "If this is checked, then Contextual Related Posts will not automatically insert the related posts at the end of post content."
+msgstr "Si cette case est cochée, alors Contextual Related Posts n'insérera pas automatiquement les articles relatifs à la fin du contenu de l'article."
+
+#: includes/admin/class-bulk-edit.php:104 includes/admin/class-metabox.php:172
+msgid "Manual related posts:"
+msgstr "Articles relatifs manuels&nbsp;:"
+
+#: includes/admin/settings/class-settings.php:224
+#: includes/admin/settings/class-settings.php:428
+msgid "Related Posts"
+msgstr "Publications similaires"
+
+#: includes/admin/settings/class-settings.php:1127
+#: includes/admin/settings/sidebar.php:37
+#: includes/admin/settings/sidebar.php:41
+msgid "Support"
+msgstr "Support"

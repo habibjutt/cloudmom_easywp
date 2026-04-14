@@ -1,0 +1,1396 @@
+# Translation of Plugins - Contextual Related Posts - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Contextual Related Posts - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-12-24 09:25:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Contextual Related Posts - Stable (latest release)\n"
+
+#: includes/admin/settings/class-settings.php:1453
+msgid "Note: This setting cannot be changed as the Thumbnail style is set to Text Only. You can change the style in the Styles tab."
+msgstr "Nota: Este ajuste no se puede cambiar ya que el estilo de la miniatura se ha establecido a solo texto. Puedes cambiar el estilo en la pestaña de estilos."
+
+#: includes/admin/settings/class-settings.php:1446
+#: includes/admin/settings/class-settings.php:1456
+msgid "Note: This setting cannot be changed as the Thumbnail style is set to Rounded Thumbnails or Rounded Thumbnails with Grid. You can change the style in the Styles tab."
+msgstr "Nota: Este ajuste no se puede cambiar ya que el estilo de la miniatura se ha establecido a miniaturas redondeadas o miniaturas redondeadas con cuadrícula. Puedes cambiar el estilo en la pestaña de estilos."
+
+#: includes/admin/settings/class-settings.php:598
+msgid "If activated, the settings from this page are automatically inserted in the Related Posts block. This also applies to existing blocks which do not have any attributes set if the post is edited."
+msgstr "Si se activa, los ajustes de esta página se insertan automáticamente en el bloque de entradas relacionadas. Esto también se aplicará a los bloques existentes que no tengan configurado ningún atributo cuando se editó la entrada."
+
+#: includes/admin/settings/class-settings.php:597
+msgid "Use global settings in block"
+msgstr "Usar ajustes globales en el bloque"
+
+#: includes/admin/class-tools-page.php:102
+msgid "Clear the Contextual Related Posts cache. This might take a while if you have a lot of posts."
+msgstr "Vacía la caché de Contextual Related Posts. Esto podría tardar un rato si tienes montones de entradas."
+
+#: includes/admin/settings/class-settings.php:623
+msgid "Select how you want the related posts to be ordered. Randomly will shuffle the related posts and does not work if you have HTML caching enabled."
+msgstr "Selecciona cómo quieres que se ordenen las entradas relacionadas. Aleatoriamente mezclará las entradas relacionadas y no funciona si tienes activada la caché HTML."
+
+#: includes/admin/class-metabox-new.php:174
+msgid "Comma separated list of category slugs. The field above has an autocomplete so simply start typing in the starting letters and it will prompt you with options. Does not support custom taxonomies."
+msgstr "Lista de categorías separadas por comas. El campo de arriba tiene un autocompletado, así que simplemente empieza a escribir las letras iniciales y se le pedirá con opciones. No admite taxonomías personalizadas."
+
+#: includes/class-main.php:245
+msgid "Contextual Related Posts and Contextual Related Posts PRO should not be active at the same time. We've automatically deactivated Contextual Related Posts PRO."
+msgstr "Contextual Related Posts y Contextual Related Posts PRO no deberían estar activos al mismo tiempo. Hemos desactivado automáticamente Contextual Related Posts PRO."
+
+#: includes/class-main.php:243
+msgid "Contextual Related Posts and Contextual Related Posts PRO should not be active at the same time. We've automatically deactivated Contextual Related Posts."
+msgstr "Contextual Related Posts y Contextual Related Posts PRO no deberían estar activos al mismo tiempo. Hemos desactivado automáticamente Contextual Related Posts."
+
+#: includes/admin/settings/sidebar.php:80
+msgid "Follow us"
+msgstr "Síguenos"
+
+#: includes/admin/settings/sidebar.php:70
+msgid "Auto Close"
+msgstr "Cierre automático"
+
+#: includes/admin/settings/sidebar.php:69
+msgid "Popular Authors"
+msgstr "Autores populares"
+
+#: includes/admin/settings/sidebar.php:68
+msgid "Followed Posts"
+msgstr "Entradas seguidas"
+
+#: includes/admin/settings/sidebar.php:67
+msgid "Snippetz"
+msgstr "Snippetz"
+
+#: includes/admin/settings/sidebar.php:65
+msgid "Better Search"
+msgstr "Better Search"
+
+#: includes/admin/settings/sidebar.php:64
+msgid "Top 10"
+msgstr "Top 10"
+
+#: includes/admin/settings/sidebar.php:59
+msgid "WebberZone plugins"
+msgstr "Plugins de WebberZone"
+
+#: includes/admin/settings/sidebar.php:33
+#: includes/admin/settings/sidebar.php:66
+msgid "Knowledge Base"
+msgstr "Base de conocimiento"
+
+#: includes/admin/settings/sidebar.php:17
+msgid "Support the development - Send us a donation today."
+msgstr "Apoya el desarrollo - Envíanos hoy un donativo"
+
+#: includes/admin/settings/sidebar.php:15
+msgid "Contextual Related Posts Pro - Buy now!"
+msgstr "Contextual Related Posts Pro - ¡Comprarlo ahora!"
+
+#: includes/admin/settings/class-settings.php:1422
+#: includes/admin/settings/class-settings.php:1439
+msgid "Upgrade to Pro"
+msgstr "Actualiza a la versión Pro"
+
+#: includes/admin/settings/class-settings.php:1299
+msgid "Reset"
+msgstr "Restablecer"
+
+#. translators: 1: Opening achor tag with Plugin page link, 2: Closing anchor
+#. tag, 3: Opening anchor tag with review link.
+#: includes/admin/settings/class-settings.php:1214
+msgid "Thank you for using %1$sContextual Related Posts by WebberZone%2$s! Please %3$srate us%2$s on %3$sWordPress.org%2$s"
+msgstr "¡Gracias por usar %1$sContextual Related Posts de WebberZone%2$s! Por favor, %3$svalóranos%2$s en %3$sWordPress.org%2$s"
+
+#: includes/admin/settings/class-settings.php:816
+msgid "You can choose from existing image sizes above or create a custom size. If you have chosen Custom size above, then enter the width, height and crop settings below. For best results, use a cropped image. If you change the width and/or height below, existing images will not be automatically resized. You will ned to regenerate the images using a plugin or using WP CLI: wp media regenerate."
+msgstr "Puedes elegir entre los tamaños de imagen existentes arriba o crear un tamaño personalizado. Si has elegido un tamaño personalizado, introduce los valores de anchura, altura y recorte a continuación. Para obtener mejores resultados, utiliza una imagen recortada. Si cambias la anchura y/o la altura, las imágenes existentes no se redimensionarán automáticamente. Tendrás que regenerar las imágenes usando un plugin o usando WP CLI: wp media regenerate."
+
+#. translators: 1: Number.
+#: includes/admin/settings/class-settings.php:676
+msgid "This sets the maximum words of the post content that will be matched. Set to 0 for no limit. Max value: %1$s."
+msgstr "Establece el máximo de palabras del contenido de la entrada que se compararán. Pon 0 para no tener límite. Valor máximo: %1$s."
+
+#: includes/admin/settings/class-settings.php:658
+msgid "The weight to give to the post excerpt when calculating the relevance of the post."
+msgstr "El peso que debe darse al extracto de la entrada al calcular la relevancia de la misma."
+
+#: includes/admin/settings/class-settings.php:657
+msgid "Weight for post excerpt"
+msgstr "Peso del extracto de la entrada"
+
+#: includes/admin/settings/class-settings.php:648
+msgid "The weight to give to the post content when calculating the relevance of the post."
+msgstr "El peso que debe darse al contenido de la entrada al calcular la relevancia de la misma."
+
+#: includes/admin/settings/class-settings.php:647
+msgid "Weight for post content"
+msgstr "Peso del contenido de la entrada"
+
+#: includes/admin/settings/class-settings.php:638
+msgid "The weight to give to the post title when calculating the relevance of the post."
+msgstr "El peso que debe darse al título de la entrada al calcular la relevancia de la misma."
+
+#: includes/admin/settings/class-settings.php:637
+msgid "Weight for post title"
+msgstr "Peso del título de la entrada"
+
+#: includes/admin/settings/class-settings.php:340
+msgid "This ignores any other HTML tags and can get confused by p tags within other tags. Use with caution."
+msgstr "Esto ignora cualquier otra etiqueta HTML y puede confundirse con etiquetas p dentro de otras etiquetas. Utilízalo con precaución."
+
+#: includes/admin/settings/class-settings.php:340
+msgid "Enter 0 to display the related posts before the post content, -1 to display this at the end, or a number to insert after a specific paragraph. For negative numbers, the count starts from the end. If the paragraph number exceeds the post's count, they'll appear at the end."
+msgstr "Pon 0 para mostrar las entradas relacionadas antes del contenido de la entrada, -1 para mostrarlo al final, o un número para insertarlo después de un párrafo específico. Para números negativos, el recuento comienza desde el final. Si el número del párrafo excede el recuento de la entrada, aparecerán al final."
+
+#: includes/admin/settings/class-settings.php:306
+msgid "Enabling this will cache the entire HTML generated when the post is visited the first time. The cache is cleaned when you save this page. Highly recommended particularly on busy sites. Default is true."
+msgstr "Al activar esta opción, se almacenará en caché todo el HTML generado cuando se visite la entrada por primera vez. La caché se limpia al guardar la página. Muy recomendable, especialmente en sitios con mucho tráfico. Por defecto es true."
+
+#: includes/admin/settings/class-settings-form.php:694
+msgid "Choose File"
+msgstr "Elegir archivo"
+
+#. translators: 1: Code.
+#: includes/admin/settings/class-settings-form.php:118
+msgid "The callback function used for the %1$s setting is missing."
+msgstr "No existe la función retorno usada para el ajuste de %1$s."
+
+#: includes/admin/class-metabox-new.php:204
+msgid "Used to specify the order in which the code snippets are added to the content. Lower numbers correspond with earlier addition, and functions with the same priority are added in the order in which they were added, typically by post ID."
+msgstr "Se utiliza para especificar el orden en que se añaden los fragmentos de código al contenido. Los números más bajos corresponden a una inserción anterior, y las funciones con la misma prioridad se añaden en el orden en que se añadieron, normalmente por ID de entrada."
+
+#: includes/admin/class-metabox-new.php:203
+msgid "Priority"
+msgstr "Prioridad"
+
+#: includes/admin/class-metabox-new.php:197
+msgid "Step 3: Priority"
+msgstr "Paso 3: Prioridad"
+
+#: includes/admin/class-metabox-new.php:185
+msgid "Include on these Tags"
+msgstr "Incluir en estas etiquetas"
+
+#: includes/admin/class-metabox-new.php:173
+msgid "Include on these Categories"
+msgstr "Incluir en estas categorías"
+
+#: includes/admin/class-metabox-new.php:166
+msgid "Enter a comma-separated list of post, page or custom post type IDs on which to include the code. Any incorrect ids will be removed when saving."
+msgstr "Introduce una lista separada por comas de IDs de entradas, páginas o tipos de contenido personalizados en los que incluir el código. Cualquier ID incorrecto se eliminará al guardar."
+
+#: includes/admin/class-metabox-new.php:165
+msgid "Include on these Post IDs"
+msgstr "Incluir en estos ID de entrada"
+
+#: includes/admin/class-metabox-new.php:159
+msgid "Select on which post types to display the contents of this snippet."
+msgstr "Selecciona en qué tipos de contenido mostrar los contenidos de este fragmento de código."
+
+#: includes/admin/class-metabox-new.php:158
+msgid "Include on these post types"
+msgstr "Incluir en estos tipos de contenido"
+
+#: includes/admin/class-metabox-new.php:153
+msgid "AND"
+msgstr "AND"
+
+#: includes/admin/class-metabox-new.php:152
+#: includes/admin/settings/sidebar.php:16
+msgid "OR"
+msgstr "OR"
+
+#: includes/admin/class-metabox-new.php:148
+msgid "Selecting OR would match any of the condition below and selecting AND would match all the conditions below."
+msgstr "Seleccionando OR coincidiría cualquiera de las condiciones de abajo y seleccionando AND coincidirían todas las condiciones de abajo."
+
+#: includes/admin/class-metabox-new.php:147
+msgid "The logical relationship between each condition below"
+msgstr "La relación lógica entre cada condición de las siguientes"
+
+#: includes/admin/class-metabox-new.php:142
+msgid "Select at least one condition below to display the contents of this snippet. Leaving any of the conditions blank will ignore it. Leaving all blank will ignore the snippet. If you want to include the snippet on all posts, then you can use the Global Settings."
+msgstr "Selecciona al menos una condición para mostrar el contenido de este fragmento. Si dejas alguna de las condiciones en blanco, la ignorarás. Si dejas todas en blanco, ignorarás el fragmento. Si quieres incluir el fragmento en todas las entradas, puedes utilizar los ajustes globales."
+
+#: includes/admin/class-metabox-new.php:141
+msgid "Step 2: Conditions"
+msgstr "Paso 2: Condiciones"
+
+#: includes/admin/class-metabox-new.php:135
+msgid "When enabled the contents of this snippet are automatically added after the content of posts based on the selection below."
+msgstr "Cuando se activa, el contenido de este fragmento se añade automáticamente después del contenido de las entradas en función de la selección realizada a continuación."
+
+#: includes/admin/class-metabox-new.php:134
+msgid "Add after Content"
+msgstr "Añadir después del contenido"
+
+#: includes/admin/class-metabox-new.php:128
+msgid "When enabled the contents of this snippet are automatically added before the content of posts based on the selection below."
+msgstr "Cuando se activa, el contenido de este fragmento se añade automáticamente antes del contenido de las entradas en función de la selección realizada a continuación."
+
+#: includes/admin/class-metabox-new.php:127
+msgid "Add before Content"
+msgstr "Añadir antes del contenido"
+
+#: includes/admin/class-metabox-new.php:120
+msgid "Add to Footer"
+msgstr "Añadir al pie de página"
+
+#: includes/admin/class-metabox-new.php:113
+msgid "Add to Header"
+msgstr "Añadir a la cabecera"
+
+#: includes/admin/class-metabox-new.php:107
+msgid "Step 1: Where to display this"
+msgstr "Paso 1: Dónde mostrar esto"
+
+#: includes/admin/class-metabox-new.php:102
+msgid "CSS"
+msgstr "CSS"
+
+#: includes/admin/class-metabox-new.php:101
+msgid "Javascript"
+msgstr "Javascript"
+
+#: includes/admin/class-metabox-new.php:100
+msgid "HTML"
+msgstr "HTML"
+
+#: includes/admin/class-metabox-new.php:96
+msgid "Select the type of snippet you want to add. You will need to update/save this page in order to update the editor format above."
+msgstr "Selecciona el tipo de fragmento que deseas añadir. Tendrás que actualizar/guardar esta página para actualizar el formato del editor anterior."
+
+#: includes/admin/class-metabox-new.php:95
+msgid "Snippet Type"
+msgstr "Tipo de fragmento de código"
+
+#: includes/admin/class-metabox-new.php:77
+msgid "Modified from default"
+msgstr "Modificado a partir del valor por defecto"
+
+#: includes/admin/class-metabox.php:173
+msgid "Start typing to find related posts"
+msgstr "Empieza a teclear para encontrar entradas relacionadas"
+
+#: includes/admin/class-bulk-edit.php:164
+msgid "Include"
+msgstr "Incluir"
+
+#: includes/admin/class-bulk-edit.php:163
+msgid "Exclude"
+msgstr "Excluir"
+
+#: includes/admin/class-bulk-edit.php:162
+msgid "&mdash; No Change &mdash;"
+msgstr "&mdash; Sin cambios &mdash;"
+
+#: includes/admin/class-bulk-edit.php:160
+msgid "Exclude from related posts"
+msgstr "Excluir de las entradas relacionadas"
+
+#: includes/admin/class-bulk-edit.php:158
+msgid "Exclude this post from related posts"
+msgstr "Excluir esta entrada de las entradas relacionadas"
+
+#: includes/admin/class-bulk-edit.php:155
+msgid "Comma-separated list of post IDs"
+msgstr "Lista de IDs de entrada separadas por comas"
+
+#: includes/admin/class-bulk-edit.php:150
+msgid "(0 to clear the manual posts)"
+msgstr "(0 para vaciar las entradas manuales)"
+
+#: includes/admin/class-bulk-edit.php:147
+msgid "Manual Related Posts"
+msgstr "Entradas relacionadas manuales"
+
+#: includes/admin/class-bulk-edit.php:120
+msgid "Exclude from list:"
+msgstr "Excluir de la lista:"
+
+#: includes/admin/settings/class-settings.php:735
+msgid "Enter a comma-separated list of meta keys. Posts that match the same value of the meta key are displayed before the other related posts"
+msgstr "Introduce una lista de claves meta separadas por comas. Lasa entradas en las que coincida el mismo valor de la clave meta se muestran antes que el resto de entradas relacionadas."
+
+#: includes/admin/settings/class-settings.php:734
+msgid "Related Meta Keys"
+msgstr "Claves meta relacionadas"
+
+#: includes/admin/class-tools-page.php:50
+msgid "Related Posts Tools"
+msgstr "Herramientas de entradas relacionadas"
+
+#: includes/frontend/blocks/class-blocks.php:133
+msgid "No related posts were found or the block rendered empty. Please modify your block settings."
+msgstr "No se encontraron entradas relacionadas o el bloque se procesó vacío. Por favor, modifica los ajustes de tu bloque."
+
+#: includes/frontend/blocks/class-blocks.php:130
+msgid "Contextual Related Posts Block"
+msgstr "Bloque de entradas relacionadas contextuales"
+
+#: includes/frontend/blocks/build/related-posts/block.json
+#: includes/frontend/blocks/src/related-posts/block.json
+msgctxt "block description"
+msgid "Display the Related Posts"
+msgstr "Muestra las entradas relacionadas"
+
+#: includes/frontend/blocks/build/related-posts/block.json
+#: includes/frontend/blocks/src/related-posts/block.json
+msgctxt "block keyword"
+msgid "contextual"
+msgstr "contextual"
+
+#: includes/frontend/blocks/build/related-posts/block.json
+#: includes/frontend/blocks/src/related-posts/block.json
+msgctxt "block keyword"
+msgid "posts"
+msgstr "entradas"
+
+#: includes/frontend/blocks/build/related-posts/block.json
+#: includes/frontend/blocks/src/related-posts/block.json
+msgctxt "block keyword"
+msgid "related posts"
+msgstr "entradas relacionadas"
+
+#: includes/frontend/blocks/build/related-posts/block.json
+#: includes/frontend/blocks/src/related-posts/block.json
+msgctxt "block title"
+msgid "Contextual Related Posts"
+msgstr "Entradas relacionadas contextuales"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:151
+msgid "Only from categories (comma-separated list of term taxonomy IDs)"
+msgstr "Solo a partir de categorías (lista de IDs de términos de taxonomía separados por comas)"
+
+#: includes/admin/settings/class-settings-form.php:476
+msgid "cropped"
+msgstr "recortado"
+
+#: includes/admin/class-metabox.php:197
+msgid "Excluded posts:"
+msgstr "Entradas excluidas:"
+
+#: includes/admin/class-metabox.php:192
+msgid "Comma separated list of post, page or custom post type IDs. e.g. 188,320,500."
+msgstr "Lista separada por comas de IDs de entradas, paginas o tipos de contenido personalizados. P.ej.: 188, 320, 500."
+
+#: includes/admin/class-metabox.php:190
+msgid "Exclude post IDs:"
+msgstr "Excluir IDs de entradas:"
+
+#: includes/admin/settings/class-settings.php:758
+msgid "Exclude Term Taxonomy IDs"
+msgstr "Excluir IDs de términos de taxonomía"
+
+#: includes/admin/settings/class-settings.php:749
+msgid "Exclude Terms"
+msgstr "Excluir términos"
+
+#: includes/admin/settings/class-settings.php:706
+msgid "If enabled, then it will only select posts from the primary category/term. This is usually set via your SEO plugin and will default to the first category/term returned by WordPress"
+msgstr "Si está activada, sólo seleccionará las entradas de la categoría/término principal. Esto se establece generalmente a través de tu plugin SEO y por defecto será la primera categoría/término devuelto por WordPress."
+
+#: includes/admin/settings/class-settings.php:705
+msgid "Limit to same primary term"
+msgstr "Limitar al mismo término principal"
+
+#: includes/admin/settings/class-settings.php:533
+#: includes/admin/settings/class-settings.php:750
+msgid "The field above has an autocomplete so simply start typing in the starting letters and it will prompt you with options. This field requires a specific format as displayed by the autocomplete."
+msgstr "El campo anterior tiene una función de autocompletar, por lo que sólo tienes que empezar a escribir las letras iniciales y se te ofrecerán opciones. Este campo requiere un formato específico que muestra el autocompletado."
+
+#: includes/admin/settings/class-settings.php:532
+msgid "Exclude on Terms"
+msgstr "Excluir en términos"
+
+#: includes/admin/settings/class-settings.php:483
+msgid "This will display the primary category/term. This is usually set via your SEO plugin and will default to the first category/term returned by WordPress"
+msgstr "Esto mostrará la categoría/término principal. Normalmente se configura a través de tu plugin SEO y por defecto será la primera categoría/término devuelta por WordPress."
+
+#: includes/admin/settings/class-settings.php:482
+msgid "Show primary category/term"
+msgstr "Mostrar categoría/término principal"
+
+#: includes/frontend/class-rest-api.php:197
+msgid "Taxonomy IDs from which posts are excluded (comma separated)"
+msgstr "ID de taxonomía de los que se excluyen las entradas (separados por comas)"
+
+#: includes/frontend/class-rest-api.php:193
+msgid "Post/page IDs to exclude (comma separated)"
+msgstr "IDs de aentrada/página a excluir (separados por comas)"
+
+#: includes/frontend/class-rest-api.php:189
+msgid "Same author"
+msgstr "Mismo autor"
+
+#: includes/frontend/class-rest-api.php:185
+msgid "Same post type"
+msgstr "Mismo tipo de contenido"
+
+#: includes/frontend/class-rest-api.php:181
+msgid "Post types (comma separated)"
+msgstr "Tipos de contenido (separados por comas)"
+
+#: includes/frontend/class-rest-api.php:176
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/components/post-limit-controls.js:13
+msgid "Number of posts"
+msgstr "Número de entradas"
+
+#: includes/frontend/class-rest-api.php:171
+msgid "Post ID."
+msgstr "ID de la entrada."
+
+#: includes/frontend/class-rest-api.php:101
+msgid "Invalid post ID."
+msgstr "ID de entrada no válido."
+
+#: includes/admin/class-metabox.php:168
+msgid "Enter a comma-separated list of terms. If a related post's title or content contains any of these terms then it will be excluded from the results."
+msgstr "Introduce una lista de términos separados por comas. Si el título o el contenido de una entrada relacionada contiene alguno de estos términos, se excluirá de los resultados."
+
+#: includes/admin/class-metabox.php:166
+msgid "Exclude terms:"
+msgstr "Excluir términos:"
+
+#: includes/util/class-cache.php:50
+msgid "Cache has been cleared"
+msgstr "Se ha vaciado la caché"
+
+#: includes/admin/settings/class-settings.php:1058
+msgid "Uses CSS grid. It will also turn off the display of the author, excerpt and date if already enabled. Disabling this option will not revert any settings."
+msgstr "Utiliza la cuadrícula CSS. También desactivará la visualización del autor, el extracto y la fecha si ya están activados. Desactivar esta opción no revertirá ningún ajuste."
+
+#: includes/admin/settings/class-settings.php:1057
+msgid "Rounded thumbnails with CSS grid"
+msgstr "Miniaturas redondeadas con cuadrícula CSS"
+
+#: includes/admin/settings/class-settings.php:1053
+msgid "Uses CSS Grid for display. Might not work on older browsers."
+msgstr "Usa cuadrícula CSS para la visualización. Podría no funcionar en navegadores antiguos."
+
+#: includes/admin/settings/class-settings.php:1052
+msgid "Grid"
+msgstr "Cuadrícula"
+
+#: includes/admin/settings/class-settings.php:1048
+msgid "Enables a masonry style layout similar to one made famous by Pinterest."
+msgstr "Activa un estilo de diseño de mosaico, similar al que se hizo famoso por Pinterest."
+
+#: includes/admin/settings/class-settings.php:1047
+msgid "Masonry"
+msgstr "Mosaico"
+
+#: includes/admin/settings/class-settings.php:774
+msgid "Applies only if the previous option is checked. Selecting this option will retain contextual matching for posts and pages but disable this on any custom post types."
+msgstr "Sólo se aplica si está marcada la opción anterior. Al seleccionar esta opción se mantendrá la concordancia contextual para entradas y páginas, pero se desactivará para cualquier tipo de contenido personalizado."
+
+#: includes/admin/settings/class-settings.php:773
+msgid "Disable contextual matching ONLY on attachments and custom post types"
+msgstr "Desactivar la concordancia contextual SÓLO en adjuntos y tipos de contenido personalizados"
+
+#: includes/admin/settings/class-settings.php:767
+msgid "Selecting this option will turn off contextual matching. This is only useful if you activate the option: \"Only from same\" from the General tab. Otherwise, you will end up with the same set of related posts on all pages with no relevance."
+msgstr "Al seleccionar esta opción se desactivará la concordancia contextual. Esto sólo es útil si activa la opción «Sólo desde el mismo» en la pestaña general. De lo contrario, acabará con el mismo conjunto de entradas relacionadas en todas las páginas sin relevancia."
+
+#: includes/admin/settings/class-settings.php:766
+msgid "Disable contextual matching"
+msgstr "Desactivar concordancia contextual"
+
+#: includes/admin/settings/class-settings.php:727
+msgid "Enter the minimum number of common terms that have to be matched before a post is considered related."
+msgstr "Introduce el número mínimo de términos comunes que deben coincidir para que una entrada se considere relacionada."
+
+#: includes/admin/settings/class-settings.php:726
+msgid "Number of common terms"
+msgstr "Número de términos comunes"
+
+#: includes/admin/settings/class-settings.php:720
+msgid "If enabled, then it will only select posts that match all the above selected taxonomies. This can result in no related posts being found."
+msgstr "Si se activa, sólo se seleccionarán las entradas que coincidan con todas las taxonomías seleccionadas. Esto puede hacer que no se encuentren entradas relacionadas."
+
+#: includes/admin/settings/class-settings.php:719
+msgid "Match all taxonomies"
+msgstr "Coincidencia de todas las taxonomías"
+
+#: includes/admin/settings/class-settings.php:713
+msgid "Limit the related posts only to the categories, tags, and/or taxonomies of the current post."
+msgstr "Limita las entradas relacionadas sólo a las categorías, etiquetas y/o taxonomías de la entrada actual."
+
+#: includes/admin/settings/class-settings.php:712
+msgid "Only from same"
+msgstr "Solo de las mismas"
+
+#. translators: 1: Link to Knowledge Base article.
+#: includes/admin/settings/class-settings.php:1189
+msgid "You can find more information on each of these tools in this <a href=\"%1$s\" target=\"_blank\">knowledgebase article</a>."
+msgstr "Puedes encontrar más información sobre cada una de estas herramientas en este <a href=\"%1$s\" target=\"_blank\">artículo de la base de conocimiento</a>."
+
+#: includes/admin/settings/class-settings.php:1186
+msgid "Clear the cache, recreate the fulltext indices (including code to manually run this in phpMyAdmin), export/import settings and delete the older settings."
+msgstr "Vacía la caché, vuelve a crear los índices de texto completo (incluido el código para ejecutarlo manualmente en phpMyAdmin), exporta/importa los ajustes y elimina los ajustes antiguos."
+
+#. translators: 1: Link to Knowledge Base article.
+#: includes/admin/settings/class-settings.php:1177
+msgid "You can find detailed information on each of the settings in these <a href=\"%1$s\" target=\"_blank\">knowledgebase articles</a>."
+msgstr "Puedes encontrar más información sobre cada uno de estos ajustes en estos <a href=\"%1$s\" target=\"_blank\">artículos de la base de conocimiento</a>."
+
+#. translators: 1: Github issues link, 2: Github plugin page link.
+#: includes/admin/settings/class-settings.php:1148
+msgid "<a href=\"%1$s\" target=\"_blank\">Post an issue</a> on <a href=\"%2$s\" target=\"_blank\">GitHub</a> (bug reports only)."
+msgstr "<a href=\"%1$s\" target=\"_blank\">Publica un problema</a> en <a href=\"%2$s\" target=\"_blank\">GitHub</a> (solo para informar de fallos)."
+
+#: includes/frontend/class-display.php:455
+msgid "(more&hellip;)"
+msgstr "(más&hellip;)"
+
+#. translators: %s: Post title.
+#: includes/frontend/class-display.php:447
+msgid "Continue reading %s"
+msgstr "Sigue leyendo %s"
+
+#: includes/admin/settings/class-settings.php:376
+msgid "If this is checked, FULLTEXT indices generated by Contextual Related Posts are removed from the database if you choose to deactivate the plugin."
+msgstr "Si está marcada, los índices FULLTEXT generados por Contextual Related Posts se eliminan de la base de datos si decides desactivar el plugin."
+
+#: includes/admin/settings/class-settings.php:375
+msgid "Delete FULLTEXT indices on deactivate"
+msgstr "Borrar índices FULLTEXT al desactivar"
+
+#: includes/frontend/class-display.php:483
+msgid "There is no excerpt because this is a protected post."
+msgstr "No hay extracto porque es una entrada protegida."
+
+#: includes/admin/settings/class-settings-api.php:243
+#: includes/admin/settings/class-settings.php:194
+msgid "Settings updated."
+msgstr "Ajustes actualizados."
+
+#: includes/admin/settings/class-settings-api.php:242
+#: includes/admin/settings/class-settings.php:193
+msgid "Settings have been reset to their default values. Reload this page to view the updated settings."
+msgstr "Los ajustes han sido restablecidos a sus valores por defecto. Recarga esta página para ver los ajustes actualizados."
+
+#: includes/admin/settings/class-settings.php:1183
+msgid "Tools"
+msgstr "Herramientas"
+
+#: includes/admin/settings/class-settings.php:1370
+msgctxt "tag delimiter"
+msgid ","
+msgstr ","
+
+#: includes/admin/settings/class-settings-api.php:247
+#: includes/admin/settings/class-settings.php:198
+msgid "Modified from default setting"
+msgstr "Modificado del ajuste por defecto"
+
+#: includes/admin/settings/class-settings.php:245
+msgid "Feed"
+msgstr "Feed"
+
+#: includes/admin/settings/class-settings.php:242
+msgid "Output"
+msgstr "Resultado"
+
+#: includes/admin/settings/class-settings.php:241
+msgid "List tuning"
+msgstr "Refinar el listado"
+
+#: includes/admin/settings/class-settings-api.php:245
+#: includes/admin/settings/class-settings.php:196
+msgid "Reset all settings"
+msgstr "Restablecer todos los ajustes"
+
+#: includes/admin/settings/class-settings-api.php:246
+#: includes/admin/settings/class-settings.php:197
+msgid "Do you really want to reset all these settings to their default values?"
+msgstr "¿Seguro que quieres restablecer todos estos ajustes a sus valores por defecto?"
+
+#: includes/admin/settings/class-settings-api.php:244
+#: includes/admin/settings/class-settings.php:195
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: includes/admin/settings/class-settings.php:1418
+msgid "Visit the Tools page"
+msgstr "Visita la página de herramientas"
+
+#: includes/admin/settings/class-settings.php:192
+#: includes/admin/settings/class-settings.php:223
+msgid "Contextual Related Posts Settings"
+msgstr "Ajustes de entradas relacionadas contextuales"
+
+#: includes/admin/settings/sidebar.php:51
+msgid "Ajay's blog"
+msgstr "Blog de Ajay"
+
+#: includes/admin/settings/sidebar.php:48
+msgid "Github repository"
+msgstr "Repositorio de GitHub"
+
+#: includes/admin/settings/sidebar.php:45
+msgid "Reviews"
+msgstr "Valoraciones"
+
+#: includes/admin/settings/sidebar.php:29
+msgid "Contextual Related Posts homepage"
+msgstr "Página de inicio de entradas relacionadas contextuales"
+
+#: includes/admin/settings/sidebar.php:23
+msgid "Quick links"
+msgstr "Enlaces rápidos"
+
+#: includes/admin/class-tools-page.php:259
+msgid "Please upload a file to import"
+msgstr "Por favor, sube un archivo para importarlo"
+
+#: includes/admin/class-tools-page.php:253
+msgid "Please upload a valid .json file"
+msgstr "Por favor, sube un archivo .json válido"
+
+#: includes/admin/class-tools-page.php:142
+msgid "Import Settings"
+msgstr "Ajustes de importación"
+
+#: includes/admin/class-tools-page.php:136
+msgid "Import the plugin settings from a .json file. This file can be obtained by exporting the settings on another site using the form above."
+msgstr "Importar los ajustes del plugin desde un archivo .json. Este archivo se puede obtener mediante la exportación de los ajustes en otro sitio usando el formulario de arriba."
+
+#: includes/admin/class-tools-page.php:127
+msgid "Export Settings"
+msgstr "Ajustes de exportación"
+
+#: includes/admin/class-tools-page.php:123
+msgid "Export the plugin settings for this site as a .json file. This allows you to easily import the configuration into another site."
+msgstr "Exportar los ajustes del plugin de este sitio como un archivo .json. Esto te permite importar fácilmente los ajustes en otro sitio."
+
+#: includes/admin/class-tools-page.php:121
+msgid "Export/Import settings"
+msgstr "Ajustes de exportación/importación"
+
+#: includes/admin/class-tools-page.php:110
+msgid "Deletes and recreates the FULLTEXT index in the posts table. If the above function gives an error, then you can run the below code in phpMyAdmin or Adminer. Remember to backup your database first!"
+msgstr "Borra y vuelve a crear el índice FULLTEXT en la tabla posts. Si la función anterior da un error, entonces puedes ejecutar el siguiente código en phpMyAdmin o Adminer. Recuerda hacer primero una copia de seguridad de tu base de datos."
+
+#: includes/admin/class-tools-page.php:105
+#: includes/admin/class-tools-page.php:107
+msgid "Recreate Indices"
+msgstr "Recrear índices"
+
+#: includes/admin/class-tools-page.php:97
+#: includes/admin/class-tools-page.php:99
+msgid "Clear cache"
+msgstr "Vaciar caché"
+
+#: includes/admin/class-tools-page.php:85
+msgid "Visit the Settings page"
+msgstr "Visita la página de ajustes"
+
+#: includes/admin/class-tools-page.php:49
+#: includes/admin/class-tools-page.php:81
+msgid "Contextual Related Posts Tools"
+msgstr "Herramientas de entradas relacionadas contextuales"
+
+#: includes/admin/class-tools-page.php:75
+msgid "Settings have been imported successfully"
+msgstr "Los ajustes se han importado correctamente"
+
+#: includes/admin/class-tools-page.php:70
+msgid "Indices have been recreated"
+msgstr "Se han recreado los índices"
+
+#: includes/admin/settings/class-settings.php:1129
+msgid "Contribute"
+msgstr "Colaborar"
+
+#: includes/admin/settings/class-settings.php:1128
+msgid "Donate"
+msgstr "Donar"
+
+#: includes/admin/settings/class-settings.php:1127
+#: includes/admin/settings/sidebar.php:37
+#: includes/admin/settings/sidebar.php:41
+msgid "Support"
+msgstr "Soporte"
+
+#: includes/admin/settings/class-settings.php:1108
+#: includes/admin/settings/class-settings.php:1172
+msgid "Settings"
+msgstr "Opciones"
+
+#: includes/admin/class-metabox.php:227
+msgid "You have Top 10 WordPress Plugin installed. If you are trying to modify the thumbnail, then you'll need to make the same change in the Top 10 meta box on this page."
+msgstr "Tienes el plugin Top 10 WordPress instalado. Si estás intentando modificar la miniatura, entonces tendrás que hacer el mismo cambio en la caja meta de Top 10 en esta página."
+
+#: includes/admin/class-metabox.php:222
+msgid "The URL above is saved in the meta field:"
+msgstr "La URL de arriba se ha guardado en el campo meta:"
+
+#: includes/admin/class-metabox.php:221
+msgid "Enter the full URL to the image (JPG, PNG or GIF) you'd like to use. This image will be used for the post. It will be resized to the thumbnail size set under Settings &raquo; Related Posts &raquo; Output Options"
+msgstr "Introduce la URL completa de la imagen (JPG, PNG o GIF) que deseas utilizar. Esta imagen se utilizará para la entrada. Se redimensionará al tamaño de miniatura establecido en Ajustes &raquo; Entradas relacionadas &raquo; Opciones de salida."
+
+#: includes/admin/class-metabox.php:219
+msgid "Location of thumbnail"
+msgstr "Ubicación de la miniatura"
+
+#. translators: Post type name
+#: includes/admin/class-metabox.php:208
+msgid "This post type is: %s"
+msgstr "Este tipo de contenido es: %s"
+
+#: includes/admin/class-bulk-edit.php:104 includes/admin/class-metabox.php:172
+msgid "Manual related posts:"
+msgstr "Entradas relacionadas manuales:"
+
+#: includes/admin/class-metabox.php:162
+msgid "Enter either a word or a phrase that will be used to find related posts. If entered, the plugin will continue to search the `post_title` and `post_content` fields but will use this keyword instead of the values of the title and content of this post."
+msgstr "Introduce una palabra o una frase que se utilizará para encontrar entradas relacionadas. Si se introduce, el plugin seguirá buscando en los campos `post_title` y `post_content` pero utilizará esta palabra clave en lugar de los valores del título y contenido de esta entrada."
+
+#: includes/admin/class-metabox.php:160
+msgid "Keyword:"
+msgstr "Palabra clave:"
+
+#: includes/admin/class-metabox.php:156
+msgid "If this is checked, then this post will be excluded from the popular posts list."
+msgstr "Si está marcada, esta entrada será excluida de la lista de entradas populares."
+
+#: includes/admin/class-metabox.php:153
+msgid "Exclude this post from the related posts list:"
+msgstr "Excluir esta entrada de la lista de entradas relacionadas:"
+
+#: includes/admin/class-metabox.php:149
+msgid "If this is checked, then Contextual Related Posts will not automatically insert the related posts at the end of post content."
+msgstr "Si está marcada esta opción, las entradas relacionadas contextuales no se insertarán automáticamente al final del contenido de la entrada."
+
+#: includes/admin/class-metabox.php:146
+msgid "Disable Related Posts display:"
+msgstr "Desactivar la visualización de entradas relacionadas:"
+
+#: includes/admin/settings/class-settings.php:1083
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/components/ordering-controls.js:31
+msgid "By date"
+msgstr "Por fecha"
+
+#: includes/admin/settings/class-settings.php:1082
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/components/ordering-controls.js:27
+msgid "Randomly"
+msgstr "Aleatoriamente"
+
+#: includes/admin/settings/class-settings.php:1081
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/components/ordering-controls.js:23
+msgid "By relevance"
+msgstr "Por relevancia"
+
+#: includes/admin/settings/class-settings.php:1043
+msgid "Enabling this option will turn on the thumbnails. It will also turn off the display of the author, excerpt and date if already enabled. Disabling this option will not revert any settings."
+msgstr "Al activar esta opción se activarán las miniaturas. También desactivará la visualización del autor, el extracto y la fecha si ya están activados. Desactivar esta opción no revertirá ningún ajuste."
+
+#: includes/admin/settings/class-settings.php:1042
+msgid "Rounded thumbnails"
+msgstr "Miniaturas redondeadas"
+
+#: includes/admin/settings/class-settings.php:1038
+msgid "Disable thumbnails and no longer include the default style sheet"
+msgstr "Desactivar las miniaturas y dejar de incluir la hoja de estilo por defecto"
+
+#: includes/admin/settings/class-settings.php:1037
+msgid "Text only"
+msgstr "Solo texto"
+
+#: includes/admin/settings/class-settings.php:1033
+msgid "Select this option if you plan to add your own styles"
+msgstr "Selecciona esta opción si tienes pensado añadir tus propios estilos"
+
+#: includes/admin/settings/class-settings.php:1032
+msgid "No styles"
+msgstr "Sin estilos"
+
+#: includes/admin/settings/class-settings.php:959
+msgid "Below options override the related posts settings for your blog feed. These only apply if you have selected to add related posts to Feeds in the General Options tab. It is recommended to not display thumbnails as there is no easy way to style the related posts in the feed."
+msgstr "Las siguientes opciones anulan los ajustes de entradas relacionadas para el feed de tu blog. Sólo se aplican si ha seleccionado añadir entradas relacionadas a los feeds en la pestaña de opciones generales. Se recomienda no mostrar miniaturas, ya que no hay una manera fácil de dar estilo a las entradas relacionadas en el feed."
+
+#: includes/admin/settings/class-settings.php:958
+msgid "About this tab"
+msgstr "Acerca de esta pestaña"
+
+#. translators: 1: Opening a tag, 2: Closing a tag, 3: Opening code tage, 4.
+#. Closing code tag.
+#: includes/admin/settings/class-settings.php:930
+msgid "Do not include %3$sstyle%4$s tags. Check out the %1$sFAQ%2$s for available CSS classes to style."
+msgstr "No incluir etiquetas de %3$sestilo%4$s. Revisa la %1$sFAQ%2$s para saber qué clases CSS hay disponibles para aplicar estilos."
+
+#: includes/admin/settings/class-settings.php:928
+msgid "Custom CSS"
+msgstr "CSS personallizado"
+
+#: includes/admin/settings/class-settings.php:920
+msgid "Related Posts style"
+msgstr "Estilo de las entradas relacionadas"
+
+#: includes/admin/settings/class-settings.php:891
+msgid "Enter the full URL of the image that you wish to display if no thumbnail is found. This image will be displayed below."
+msgstr "Introduce la URL completa de la imagen que deseas mostrar si no se encuentra ninguna miniatura. Esta imagen se mostrará debajo."
+
+#: includes/admin/settings/class-settings.php:890
+#: includes/admin/settings/class-settings.php:1279
+msgid "Default thumbnail"
+msgstr "Miniatura por defecto"
+
+#: includes/admin/settings/class-settings.php:884
+msgid "If checked, when no thumbnail is found, show a default one from the URL below. If not checked and no thumbnail is found, no image will be shown."
+msgstr "Si está marcada, cuando no se encuentre ninguna miniatura, mostrará una por defecto desde la URL de abajo. Si no está marcada y no se encuentra ninguna miniatura, no se mostrará ninguna imagen."
+
+#: includes/admin/settings/class-settings.php:883
+msgid "Use default thumbnail?"
+msgstr "¿Usar la miniatura por defecto?"
+
+#: includes/admin/settings/class-settings.php:877
+msgid "The plugin will fetch the first image in the post content if this is enabled. This can slow down the loading of your page if the first image in the followed posts is large in file-size."
+msgstr "El plugin buscará la primera imagen en el contenido de la entrada si esta opción está activada. Esto puede ralentizar la carga de tu página si la primera imagen en las entradas seguidas es grande en tamaño de archivo."
+
+#: includes/admin/settings/class-settings.php:876
+msgid "Get first image"
+msgstr "Obtener la primera imagen"
+
+#: includes/admin/settings/class-settings.php:870
+msgid "The value of this field should contain the URL of the image and can be set in the metabox in the Edit Post screen"
+msgstr "El valor de este campo debe contener la URL de la imagen y puede establecerse en la caja metabox de la pantalla de edición de la entrada."
+
+#: includes/admin/settings/class-settings.php:869
+msgid "Thumbnail meta field name"
+msgstr "Nombre del campo meta de la miniatura"
+
+#: includes/admin/settings/class-settings.php:864
+msgid "No width or height set. You will need to use external styles to force any width or height of your choice."
+msgstr "No se ha definido ancho ni altura. Tendrás que usar estilos externos para forzar cualquier ancho o alto que elijas."
+
+#. translators: %s: Code.
+#: includes/admin/settings/class-settings.php:863
+msgid "Use HTML attributes to set the width and height: e.g. %s"
+msgstr "Usa atributos HTML para definir el ancho y alto: P.ej.: %s"
+
+#. translators: %s: Code.
+#: includes/admin/settings/class-settings.php:861
+msgid "Use CSS to set the width and height: e.g. %s"
+msgstr "Usa CSS para definir el ancho y alto: P.ej.: %s"
+
+#: includes/admin/settings/class-settings.php:855
+msgid "Thumbnail size attributes"
+msgstr "Atributos de tamaño de la miniatura"
+
+#: includes/admin/settings/class-settings.php:849
+msgid "If you select this option and Custom size is selected above, the plugin will register the image size with WordPress to create new thumbnails. Does not update old images as explained above."
+msgstr "Si seleccionas esta opción y arriba seleccionas el tamaño personalizado, el plugin registrará el tamaño de la imagen con WordPress para crear nuevas miniaturas. No actualiza las imágenes antiguas como se explicó anteriormente."
+
+#: includes/admin/settings/class-settings.php:848
+msgid "Generate thumbnail sizes"
+msgstr "Generar tamaños de miniatura"
+
+#: includes/admin/settings/class-settings.php:842
+msgid "Check this box to hard crop the thumbnails. i.e. force the width and height above vs. maintaining proportions."
+msgstr "Marca esta casilla para forzara el recorte de las miniaturas. O sea, para forzar el ancho y alto de arriba pero sin mantener las proporciones."
+
+#: includes/admin/settings/class-settings.php:841
+msgid "Hard crop thumbnails"
+msgstr "Recorte forzado de miniaturas"
+
+#: includes/admin/settings/class-settings.php:815
+msgid "Thumbnail size"
+msgstr "Tamaño de la miniatura"
+
+#: includes/admin/settings/class-settings.php:810
+#: includes/admin/settings/class-settings.php:988
+msgid "Do not display thumbnails, only text"
+msgstr "No mostrar miniaturas, solo texto"
+
+#: includes/admin/settings/class-settings.php:809
+#: includes/admin/settings/class-settings.php:987
+msgid "Display only thumbnails, no text"
+msgstr "Solo miniaturas, sin texto"
+
+#: includes/admin/settings/class-settings.php:808
+#: includes/admin/settings/class-settings.php:986
+msgid "Display thumbnails inline with posts, after title"
+msgstr "Muestra miniaturas incrustadas con las entradas, después del título"
+
+#: includes/admin/settings/class-settings.php:807
+#: includes/admin/settings/class-settings.php:985
+msgid "Display thumbnails inline with posts, before title"
+msgstr "Muestra miniaturas incrustadas con las entradas, antes del título"
+
+#: includes/admin/settings/class-settings.php:802
+#: includes/admin/settings/class-settings.php:980
+msgid "Location of the post thumbnail"
+msgstr "Ubicación de la miniatura de la entrada"
+
+#: includes/admin/settings/class-settings.php:759
+msgid "This is a readonly field that is automatically populated based on the above input when the settings are saved. These might differ from the IDs visible in the Categories page which use the term_id. Contextual Related Posts uses the term_taxonomy_id which is unique to this taxonomy."
+msgstr "Se trata de un campo de sólo lectura que se rellena automáticamente en función de la entrada anterior cuando se guardan los ajustes. Estos pueden diferir de los IDs visibles en la página de categorías que usa el term_id. Contextual Related Posts utiliza el term_taxonomy_id que es único para esta taxonomía."
+
+#: includes/admin/class-metabox-new.php:186
+msgid "Comma separated list of tag slugs. The field above has an autocomplete so simply start typing in the starting letters and it will prompt you with options. Does not support custom taxonomies."
+msgstr "Lista de slugs de etiquetas separados por comas. El campo de arriba tiene un autocompletado, así que simplemente empieza a escribir las letras iniciales y te preguntará con opciones. No admite taxonomías personalizadas."
+
+#: includes/admin/settings/class-settings.php:743
+msgid "Comma-separated list of post or page IDs to exclude from the list. e.g. 188,320,500"
+msgstr "Lista separada por comas de IDs de entradas o páginas a excluir de la lista. P.ej.: 188,320,500"
+
+#: includes/admin/settings/class-settings.php:742
+msgid "Post/page IDs to exclude"
+msgstr "IDs de entrada/página a excluir"
+
+#: includes/admin/settings/class-settings.php:699
+msgid "If checked, the related posts will only be selected from the same author of the current post."
+msgstr "Si se marca, las entradas relacionadas solo serán seleccionadas entre las del mismo autor de la entrada actual."
+
+#: includes/admin/settings/class-settings.php:698
+msgid "Limit to same author"
+msgstr "Limitar al mismo autor"
+
+#: includes/admin/settings/class-settings.php:692
+msgid "If checked, the related posts will only be selected from the same post type of the current post."
+msgstr "Si está marcada, las entradas relacionadas sólo se seleccionarán del mismo tipo de contenido que la entrada actual."
+
+#: includes/admin/settings/class-settings.php:691
+msgid "Limit to same post type"
+msgstr "Limitar al mismo tipo de contenido"
+
+#: includes/admin/settings/class-settings.php:685
+msgid "At least one option should be selected above. Select which post types you want to include in the list of posts. This field can be overridden using a comma separated list of post types when using the manual display."
+msgstr "Al menos una de las opciones anteriores debe estar seleccionada. Selecciona qué tipos de contenido quieres incluir en la lista de entradas. Este campo puede anularse utilizando una lista de tipos de contenido separada por comas cuando se utiliza la visualización manual."
+
+#: includes/admin/settings/class-settings.php:674
+msgid "Limit content to be compared"
+msgstr "Limitar el contenido a comparar"
+
+#: includes/admin/settings/class-settings.php:668
+msgid "If unchecked, only posts titles are used. Enable the cache if enabling this option for better performance. Each site is different, so toggle this option to see which setting gives you better quality related posts."
+msgstr "Si no está marcada, sólo se utilizan los títulos de las entradas. Activa la caché si activas esta opción para mejorar el rendimiento. Cada sitio es diferente, por lo que alternar esta opción para ver qué ajuste te da entradas relacionadas de mejor calidad."
+
+#: includes/admin/settings/class-settings.php:667
+msgid "Related posts based on title and content"
+msgstr "Entradas relacionadas basadas en el título y el contenido"
+
+#: includes/admin/settings/class-settings.php:631
+msgid "This shuffles the selected related posts, similar to choosing Randomly in the above option. If you select to order by date in the previous option, then the related posts will first be sorted by date and the selected ones are shuffled. Does not work if Cache HTML output is enabled."
+msgstr "Esto mezcla las entradas relacionadas seleccionadas, de forma similar a elegir aleatoriamente en la opción anterior. Si selecciona ordenar por fecha en la opción anterior, entonces las entradas relacionadas se ordenarán primero por fecha y las seleccionadas se mezclarán. No funciona si la opción de caché HTML está activada."
+
+#: includes/admin/settings/class-settings.php:630
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/components/ordering-controls.js:38
+msgid "Randomize posts"
+msgstr "Entradas aleatorias"
+
+#: includes/admin/settings/class-settings.php:615
+msgid "This sets the cut-off period for which posts will be displayed. e.g. setting it to 365 will show related posts from the last year only. Set to 0 to disable limiting posts by date."
+msgstr "Establece el periodo límite para el que se mostrarán las entradas. Por ejemplo, si se establece en 365, sólo se mostrarán las entradas relacionadas del último año. Ajústalo a 0 para desactivar la limitación de publicaciones por fecha."
+
+#: includes/admin/settings/class-settings.php:614
+msgid "Related posts should be newer than"
+msgstr "Las entradas relacionadas deben ser más recientes que"
+
+#: includes/admin/settings/class-settings.php:606
+msgid "Maximum number of posts that will be displayed in the list. This option is used if you do not specify the number of posts in the widget or shortcodes"
+msgstr "Número máximo de entradas que se mostrarán en la lista. Esta opción se utiliza si no se especifica el número de entradas en el widget o shortcodes."
+
+#: includes/admin/settings/class-settings.php:605
+#: includes/admin/settings/class-settings.php:964
+msgid "Number of posts to display"
+msgstr "Número de entradas a mostrar"
+
+#: includes/admin/settings/class-settings.php:568
+msgid "After each list item"
+msgstr "Después de cada elemento de la lista"
+
+#: includes/admin/settings/class-settings.php:561
+msgid "Before each list item"
+msgstr "Antes de cada elemento de la lista"
+
+#: includes/admin/settings/class-settings.php:554
+msgid "After the list of posts"
+msgstr "Después de la lista de entradas"
+
+#: includes/admin/settings/class-settings.php:547
+msgid "Before the list of posts"
+msgstr "Antes de la lista de entradas"
+
+#: includes/admin/settings/class-settings.php:541
+msgid "HTML to display"
+msgstr "HTML a mostrar"
+
+#: includes/admin/settings/class-settings.php:526
+msgid "The related posts will not display on any of the above selected post types."
+msgstr "Las entradas relacionadas no se mostrarán en ninguno de los tipos de contenido seleccionados arriba."
+
+#: includes/admin/settings/class-settings.php:525
+msgid "Exclude display on these post types"
+msgstr "Excluir la visualización en estos tipos de contenido"
+
+#: includes/admin/settings/class-settings.php:519
+msgid "Comma separated list of post, page or custom post type IDs. e.g. 188,320,500"
+msgstr "Lista separada por comas de ID de entradas, páginas o tipos de contenido personalizados. P. ej.: 188.320.500"
+
+#: includes/admin/settings/class-settings.php:518
+msgid "Exclude display on these posts"
+msgstr "Excluir la visualización en estas entradas"
+
+#: includes/admin/settings/class-settings.php:512
+msgid "Exclusion settings"
+msgstr "Ajustes de exclusión"
+
+#: includes/admin/settings/class-settings.php:505
+msgid "Add nofollow to links"
+msgstr "Añadir «nofollow» a los enlaces"
+
+#: includes/admin/settings/class-settings.php:498
+msgid "Open links in new window"
+msgstr "Abrir enlaces en una nueva ventana"
+
+#: includes/admin/settings/class-settings.php:490
+msgid "Any title longer than the number of characters set above will be cut and appended with an ellipsis (&hellip;)"
+msgstr "Cualquier título que sea más largo que el número de caracteres definido arriba se cortará y se añadirá una elipsis (&hellip;)"
+
+#: includes/admin/settings/class-settings.php:489
+msgid "Limit post title length (in characters)"
+msgstr "Limitar la longitud del título de la entrada (en caracteres)"
+
+#: includes/admin/settings/class-settings.php:475
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/components/post-display-controls.js:27
+msgid "Show author"
+msgstr "Mostrar autor"
+
+#: includes/admin/settings/class-settings.php:469
+msgid "Displays the date of the post. Uses the same date format set in General Options."
+msgstr "Muestra la fecha de la entrada. Usa el mismo formato de fecha definido en las opciones generales."
+
+#: includes/admin/settings/class-settings.php:468
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/components/post-display-controls.js:42
+msgid "Show date"
+msgstr "Mostrar fecha"
+
+#: includes/admin/settings/class-settings.php:459
+msgid "Length of excerpt (in words)"
+msgstr "Longitud del extracto (en palabras)"
+
+#: includes/admin/settings/class-settings.php:453
+msgid "If the post does not have an excerpt, the plugin will automatically create one containing the number of words specified in the next option."
+msgstr "Si la entrada no tiene extracto, el plugin creará automáticamente uno que contenga el número de palabras especificado en la siguiente opción."
+
+#: includes/admin/settings/class-settings.php:452
+#: includes/admin/settings/class-settings.php:973
+msgid "Show post excerpt"
+msgstr "Mostrar extracto de la entrada"
+
+#: includes/admin/settings/class-settings.php:446
+msgid "Enter the custom text that will be displayed if the second option is selected above."
+msgstr "Introduce el texto personalizado que se mostrará si se ha seleccionado arriba la segunda opción."
+
+#: includes/admin/settings/class-settings.php:445
+msgid "Custom text"
+msgstr "Texto personalizado"
+
+#: includes/admin/settings/class-settings.php:440
+msgid "Display custom text"
+msgstr "Mostrar texto personalizado"
+
+#: includes/admin/settings/class-settings.php:439
+msgid "Blank output"
+msgstr "Salida vacía"
+
+#: includes/admin/settings/class-settings.php:433
+msgid "Show when no posts are found"
+msgstr "Mostrar cuando no haya entradas"
+
+#: includes/admin/settings/class-settings.php:224
+#: includes/admin/settings/class-settings.php:428
+msgid "Related Posts"
+msgstr "Post Relacionados"
+
+#: includes/admin/settings/class-settings.php:426
+msgid "Displayed before the list of the posts as a master heading"
+msgstr "Mostrado antes de la lista de entradas como encabezado maestro"
+
+#: includes/admin/settings/class-settings.php:425
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/components/heading-controls.js:26
+msgid "Heading of posts"
+msgstr "Encabezado de las entradas"
+
+#: includes/admin/settings/class-settings.php:397
+msgid "A no-follow link to the plugin homepage will be added as the last item of the related posts."
+msgstr "Un enlace nofollow a la página de inicio del plugin se añadirá como último elemento de las entradas relacionadas."
+
+#: includes/admin/settings/class-settings.php:396
+msgid "Link to Contextual Related Posts plugin page"
+msgstr "Enlace a la página del plugin Contextual Related Posts"
+
+#: includes/admin/settings/class-settings.php:390
+msgid "If selected, the meta box will be hidden from anyone who is not an Admin. By default, Contributors and above will be able to see the meta box. Applies only if the above option is selected."
+msgstr "Si selecciona, la caja meta estará oculta para cualquiera que no sea administrador. Por defecto los colaboradores y por encima podrán ver la caja meta. Se aplica solo si está seleccionada la opción de arriba."
+
+#: includes/admin/settings/class-settings.php:389
+msgid "Limit meta box to Admins only"
+msgstr "Limitar caja meta solo a administradores"
+
+#: includes/admin/settings/class-settings.php:383
+msgid "This will add the Contextual Related Posts metabox on Edit Posts or Add New Posts screens. Also applies to Pages and Custom Post Types."
+msgstr "Esto añadirá la caja meta de Contextual Related Posts a las pantallas de edición de entradas y de añadir nuevas entradas. También se aplica a páginas y tipos de contenido personalizados."
+
+#: includes/admin/settings/class-settings.php:382
+msgid "Show metabox"
+msgstr "Mostrar caja meta"
+
+#: includes/admin/settings/class-settings.php:369
+msgid "If this is checked, FULLTEXT indices generated by Contextual Related Posts are removed from the database if you choose to uninstall/delete the plugin."
+msgstr "Si está marcado, los índices FULLTEXT generados por Contextual Related Posts se eliminarán de la base de datos si decides desinstalar/eliminar el plugin."
+
+#: includes/admin/settings/class-settings.php:368
+msgid "Delete FULLTEXT indices on uninstall"
+msgstr "Borrar índices FULLTEXT al desinstalar"
+
+#: includes/admin/settings/class-settings.php:362
+msgid "If this is checked, all settings related to Contextual Related Posts are removed from the database if you choose to uninstall/delete the plugin."
+msgstr "Si esta opción está seleccionada, todos los ajustes relacionados con Contextual Related Posts se eliminarán de la base de datos si decides desinstalar/eliminar el plugin."
+
+#: includes/admin/settings/class-settings.php:361
+msgid "Delete options on uninstall"
+msgstr "Borrar opciones al desinstalar"
+
+#: includes/admin/settings/class-settings.php:355
+msgid "Disable display of related posts on AMP pages."
+msgstr "Desactiva la visualización de entradas relacionadas en páginas AMP."
+
+#: includes/admin/settings/class-settings.php:354
+msgid "Disable on AMP pages"
+msgstr "Desactivar en páginas AMP."
+
+#: includes/admin/settings/class-settings.php:348
+msgid "Disable display of related posts on mobile devices. Might not always work with caching plugins."
+msgstr "Desactiva la visualización de entradas relacionadas en dispositivos móviles. Podría no funcionar siempre por los plugins de caché."
+
+#: includes/admin/settings/class-settings.php:347
+msgid "Disable on mobile devices"
+msgstr "Desactivar en dispositivos móviles"
+
+#: includes/admin/settings/class-settings.php:339
+msgid "Insert after paragraph number"
+msgstr "Insertar después del número del párrafo"
+
+#: includes/admin/settings/class-settings.php:333
+msgid "Select the relative position of the related posts in the post content. A higher number pushes the related posts later in the content. Any number below 10 is not recommended."
+msgstr "Selecciona la posición relativa de las entradas relacionadas en el contenido de la entrada. Un número mayor coloca las entradas relacionadas más adelante en el contenido. No se recomienda un número inferior a 10."
+
+#: includes/admin/settings/class-settings.php:332
+msgid "Display location priority"
+msgstr "Mostrar prioridad de ubicación"
+
+#: includes/admin/settings/class-settings.php:327
+msgid "Other archives"
+msgstr "Otros archivos"
+
+#: includes/admin/settings/class-settings.php:326
+msgid "Tag archives"
+msgstr "Archivos de etiquetas"
+
+#: includes/admin/settings/class-settings.php:325
+msgid "Category archives"
+msgstr "Archivos de categorías"
+
+#: includes/admin/settings/class-settings.php:324
+msgid "Feeds"
+msgstr "Feeds"
+
+#: includes/admin/settings/class-settings.php:323
+msgid "Home page"
+msgstr "Página de inicio"
+
+#: includes/admin/settings/class-settings.php:322
+msgid "Pages"
+msgstr "Páginas"
+
+#: includes/admin/settings/class-settings.php:321
+msgid "Posts"
+msgstr "Entradas"
+
+#. translators: 1: Code.
+#: includes/admin/settings/class-settings.php:314
+msgid "If you choose to disable this, please add %1$s to your template file where you want it displayed"
+msgstr "Si eliges desactivar esto, por favor, añadi %1$s al archivo de tu plantilla donde quieras que se muestre"
+
+#: includes/admin/settings/class-settings.php:312
+msgid "Automatically add related posts to"
+msgstr "Añadir automáticamente entradas relacionadas a"
+
+#: includes/admin/settings/class-settings.php:305
+msgid "Cache HTML output"
+msgstr "Almacenar en caché el HTML generado"
+
+#: includes/admin/settings/class-settings.php:299
+msgid "Enabling this will only cache the related posts but not the entire HTML output. This gives you more flexibility at marginally lower performance. Use this if you only have the related posts called with the same set of parameters."
+msgstr "Activando esto solo se almacenarán en caché las entradas relacionadas pero no todo el HTML generado. Esto te ofrece más flexibilidad con un poco de menor rendimiento. Usa esto solo si llamas a las entradas relacionadas con el mismo conjunto de parámetros."
+
+#: includes/admin/settings/class-settings.php:298
+msgid "Cache posts only"
+msgstr "Almacenar en caché solo las entradas"
+
+#: includes/admin/settings/class-settings.php:1185
+msgid "This screen provides some tools that help maintain certain features of Contextual Related Posts."
+msgstr "Esta pantalla proporciona algunas herramientas para ayudar a mantener ciertas características de Contextual Related Posts."
+
+#: includes/admin/settings/class-settings.php:244
+msgid "Styles"
+msgstr "Estilos"
+
+#: includes/admin/settings/class-settings.php:243
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+#: includes/admin/settings/class-settings.php:1174
+msgid "This screen provides the various settings for configuring Contextual Related Posts."
+msgstr "Esta pantalla ofrece diversos ajustes para configurar Contextual Related Posts."
+
+#: includes/admin/settings/class-settings.php:240
+msgid "General"
+msgstr "General"
+
+#. translators: 1: Plugin support site link.
+#: includes/admin/settings/class-settings.php:1145
+msgid "For more information or how to get support visit the <a href=\"%s\" target=\"_blank\">support site</a>."
+msgstr "Para más información sobre cómo obtener soporte vista el <a href=\"%s\" target=\"_blank\">sitio de soporte</a>."
+
+#. translators: Link to plugin home page
+#: includes/frontend/class-display.php:244
+msgid "Powered by <a href=\"%s\" rel=\"nofollow\" style=\"float:none\">Contextual Related Posts</a>"
+msgstr "Funciona gracias a <a href=\"%s\" rel=\"nofollow\" style=\"float:none\">Contextual Related Posts</a>"
+
+#: includes/frontend/class-display.php:731
+msgid " by "
+msgstr " por "
+
+#: includes/admin/settings/class-settings.php:684
+#: includes/frontend/widgets/class-related-posts-widget.php:155
+msgid "Post types to include"
+msgstr "Tipos de contenido a incluir"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:146
+msgid " Randomize posts"
+msgstr " Entradas aleatorias"
+
+#: includes/admin/settings/class-settings.php:622
+#: includes/frontend/widgets/class-related-posts-widget.php:132
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/components/ordering-controls.js:13
+msgid "Order posts"
+msgstr "Ordenar las entradas"
+
+#: includes/admin/settings/class-settings.php:823
+#: includes/admin/settings/class-settings.php:993
+#: includes/frontend/widgets/class-related-posts-widget.php:129
+msgid "Thumbnail width"
+msgstr "Anchura de la miniatura"
+
+#: includes/admin/settings/class-settings.php:832
+#: includes/admin/settings/class-settings.php:1002
+#: includes/frontend/widgets/class-related-posts-widget.php:124
+msgid "Thumbnail height"
+msgstr "Altura de la miniatura"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:119
+msgid "No thumbnails, only text."
+msgstr "Sin miniaturas, solo texto."
+
+#: includes/frontend/widgets/class-related-posts-widget.php:118
+msgid "Only thumbnails, no text"
+msgstr "Solo miniaturas, sin texto"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:117
+msgid "Thumbnails inline, after title"
+msgstr "Miniaturas integradas, después del título"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:116
+msgid "Thumbnails inline, before title"
+msgstr "Miniaturas integradas, antes del título"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:114
+msgid "Thumbnail options"
+msgstr "Opciones de la miniatura"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:110
+msgid " Show date?"
+msgstr "¿Mostrar la fecha?"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:105
+msgid " Show author?"
+msgstr "¿Mostrar el autor?"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:100
+msgid " Show excerpt?"
+msgstr " ¿Mostrar el extracto?"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:95
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/components/post-limit-controls.js:24
+msgid "Offset"
+msgstr "Compensar"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:90
+msgid "No. of posts"
+msgstr "Número de entradas"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:85
+msgid "Title"
+msgstr "Título"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:33
+msgid "Display Related Posts"
+msgstr "Mostrar las entradas relacionadas"
+
+#: includes/frontend/widgets/class-related-posts-widget.php:31
+msgid "Related Posts [CRP]"
+msgstr "Entradas relacionadas [CRP]"
+
+#: includes/admin/settings/class-settings.php:448
+msgid "No related posts found"
+msgstr "No se han encontrado entradas relacionadas"
+
+#. Author URI of the plugin
+#: contextual-related-posts.php
+msgid "https://webberzone.com"
+msgstr "https://webberzone.com"
+
+#. Author of the plugin
+#: contextual-related-posts.php
+msgid "WebberZone"
+msgstr "WebberZone"
+
+#. Description of the plugin
+#: contextual-related-posts.php
+msgid "Display related posts on your website or in your feed. Increase reader retention and reduce bounce rates."
+msgstr "Muestra entradas relacionadas en tu web o en tu feed. Aumenta la retención del lector y reduce las tasas de rebote."
+
+#. Plugin URI of the plugin
+#: contextual-related-posts.php
+msgid "https://webberzone.com/plugins/contextual-related-posts/"
+msgstr "https://webberzone.com/plugins/contextual-related-posts/"
+
+#. Plugin Name of the plugin
+#: contextual-related-posts.php includes/admin/class-bulk-edit.php:82
+#: includes/admin/class-metabox-new.php:75
+#: includes/frontend/blocks/build/related-posts/index.js:1
+#: includes/frontend/blocks/src/related-posts/edit.js:89
+msgid "Contextual Related Posts"
+msgstr "Contextual Related Posts"

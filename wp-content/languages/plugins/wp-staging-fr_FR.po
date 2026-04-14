@@ -1,0 +1,373 @@
+# Translation of Plugins - WP STAGING WordPress Backup Plugin &#8211; Migration Backup Restore - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - WP STAGING WordPress Backup Plugin &#8211; Migration Backup Restore - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-02-28 16:48:36+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - WP STAGING WordPress Backup Plugin &#8211; Migration Backup Restore - Stable (latest release)\n"
+
+#: views/backup/listing-single-backup.php:217
+#: views/backup/listing-single-cloud-backup.php:72
+msgid "Created on:"
+msgstr "Créé le :"
+
+#: Backup/Ajax/ScheduleList.php:93 views/backup/listing-single-backup.php:173
+msgid "Edit"
+msgstr "Modifier"
+
+#: views/backup/listing-single-backup.php:169
+msgid "Edit backup name and / or notes"
+msgstr "Modifier le nom de la sauvegarde ou les notes"
+
+#: Framework/Assets/I18n.php:40 views/backup/listing-single-backup.php:109
+#: views/backup/listing-single-cloud-backup.php:44
+#: views/cli/cli-integration-modal.php:76
+msgid "Restore"
+msgstr "Restaurer"
+
+#: views/backup/listing-single-backup.php:227
+#: views/backup/listing-single-cloud-backup.php:85
+msgid "Notes:"
+msgstr "Notes :"
+
+#: views/settings/tabs/mail-settings.php:11
+msgid "Mail Delivery Setting"
+msgstr "Réglages des envois par e-mail"
+
+#: Framework/Assets/I18n.php:33
+msgid "Success"
+msgstr "Réussi"
+
+#: Frontend/Frontend.php:52
+msgid "Access Denied"
+msgstr "Accès refusé"
+
+#: runtimeRequirements.php:399 views/notices/analytics-consent-refused.php:2
+#: views/notices/pro-crons-notice.php:3
+msgid "WP STAGING"
+msgstr "WP STAGING"
+
+#: views/clone/ajax/start.php:43
+msgid "BACK"
+msgstr "RETOUR"
+
+#: views/clone/ajax/start.php:46
+msgid "Open Staging Site"
+msgstr "Ouvrir un site de staging"
+
+#: views/clone/ajax/external-database.php:85
+#: views/staging/setup/external-database.php:23
+msgid "Test Database Connection"
+msgstr "Tester la connexion à la base de données"
+
+#: views/notices/beta.php:22
+msgid "I understand! (Do not show this again)"
+msgstr "Je comprends ! (n’affichez plus cela)"
+
+#: views/notices/beta.php:16
+msgid "A good plugin for an entire WordPress backup is the free one"
+msgstr "Une bonne extension pour une sauvegarde complète de WordPress est celle qui est gratuite"
+
+#: views/_main/faq.php:24
+msgid "Page not found – Error 404 after Pushing"
+msgstr "Page non trouvée - Erreur 404 après la poussée"
+
+#: views/_main/faq.php:16
+msgid "Skip WooCommerce Orders and Products"
+msgstr "Passer les commandes et produits WooCommerce"
+
+#: views/_main/faq.php:12
+msgid "Staging site returns blank white page"
+msgstr "Le site de staging a renvoyé une page blanche"
+
+#: views/_main/faq.php:11
+msgid "Staging site redirects to production site"
+msgstr "Redirection du site de test vers le site de production"
+
+#: views/_main/faq.php:10
+msgid "Can not login to staging site"
+msgstr "Connexion impossible au site de staging "
+
+#: Backend/Modules/Views/Forms/Settings.php:333
+msgid "Allow access from all visitors"
+msgstr "Autoriser l’accès à tous les visiteurs"
+
+#: Backend/Modules/Views/Forms/Settings.php:272
+#: views/settings/tabs/general.php:375
+msgid "Access Permissions"
+msgstr "Permissions d’accès"
+
+#: Backend/Modules/Views/Forms/Settings.php:263
+msgid "Check Directory Size"
+msgstr "Vérifier la taille du répertoire"
+
+#: Backend/Modules/Views/Forms/Settings.php:251
+msgid "Remove Data on Uninstall?"
+msgstr "Supprimer les données lors de la désinstallation ?"
+
+#: Backend/Modules/Views/Forms/Settings.php:239
+msgid "Debug Mode"
+msgstr "Mode débogage"
+
+#: Backend/Modules/Views/Forms/Settings.php:226
+#: views/settings/tabs/general.php:351
+msgid "Keep Permalinks"
+msgstr "Garder les permaliens"
+
+#: Backend/Modules/Views/Forms/Settings.php:212
+msgid "Disable admin authorization"
+msgstr "Désactiver l’autorisation d’admin"
+
+#: Backend/Modules/Views/Forms/Settings.php:198
+msgid "Optimizer"
+msgstr "Outil d’optimisation"
+
+#: Backend/Modules/Views/Forms/Settings.php:185
+msgid "Delay Between Requests"
+msgstr "Délai entre les requêtes"
+
+#: Backend/Modules/Views/Forms/Settings.php:168
+msgid "CPU Load Priority"
+msgstr "Priorité de chargement CPU"
+
+#: Backend/Administrator.php:263
+msgid "WP Staging "
+msgstr "WP Staging "
+
+#: Backend/Modules/Jobs/ProcessLock.php:50 views/clone/ajax/process-lock.php:9
+msgid "Stop other process"
+msgstr "Arrêter l’autre processus"
+
+#: views/feedback/deactivate-feedback.php:42
+msgid "Other reason"
+msgstr "Autre raison"
+
+#: views/feedback/deactivate-feedback.php:44
+msgid "Please specify, if possible"
+msgstr "Veuillez préciser, si possible"
+
+#: views/feedback/deactivate-feedback.php:28
+msgid "Technical Issue"
+msgstr "Problème technique"
+
+#: views/feedback/deactivate-feedback.php:30
+msgid "Can we help? Please describe your problem"
+msgstr "Pouvons-nous aider ? Veuillez décrire votre problème"
+
+#: views/feedback/deactivate-feedback.php:14
+msgid "Only temporary"
+msgstr "Uniquement temporaire"
+
+#: views/feedback/deactivate-feedback.php:98
+msgid "Submit & Deactivate"
+msgstr "Envoyer & désactiver"
+
+#: views/feedback/deactivate-feedback.php:35
+msgid "Switched to another plugin/staging solution"
+msgstr "Basculé vers une autre extension/solution de test"
+
+#: Frontend/LoginForm.php:214
+msgid "Username"
+msgstr "Identifiant"
+
+#: views/clone/ajax/scan.php:145 views/staging/setup.php:117
+msgid "Check required disk space"
+msgstr "Vérifier l’espace disque nécessaire"
+
+#: views/staging/staging-site-list-item.php:35
+msgid "Open the staging site in a new tab"
+msgstr "Ouvrez le site de staging dans un nouvel onglet"
+
+#: Framework/Assets/I18n.php:42 views/selections/database-tables.php:25
+#: views/selections/files.php:22 views/staging/confirm-delete.php:30
+#: views/staging/_partials/files-selection.php:27
+#: views/staging/_partials/tables-selection.php:30
+msgid "Unselect All"
+msgstr "Tout désélectionner"
+
+#: views/clone/ajax/exclude-settings.php:20 views/clone/ajax/scan.php:48
+#: views/staging/setup.php:47
+msgid "Database Tables"
+msgstr "Tables de la base de données"
+
+#: Backend/Modules/Jobs/Database.php:243
+msgid "This staging site is located in another database and needs to be edited with <a href='https://wp-staging.com' target='_blank'>WP STAGING Pro</a>"
+msgstr "Ce site de staging est situé dans un autre espace de travail et doit être édité avec <a href=’https://wp-staging.com’ target=’_blank’>WP Staging Pro</a>"
+
+#: views/clone/ajax/scan.php:33 views/staging/setup.php:31
+msgid "<br>Probably not enough free disk space to create a staging site. <br> You can continue but its likely that the copying process will fail."
+msgstr "<br>Il semble ne pas y avoir assez d’espace libre pour créer un site de staging.<br> Vous pouvez continuer, mais il est probable que le processus de copie échoue."
+
+#: views/staging/confirm-delete.php:19
+msgid "Database Name:"
+msgstr "Nom de la base de données :"
+
+#: views/clone/ajax/start.php:17
+msgid "Resume"
+msgstr "Reprendre"
+
+#: views/notices/wrong-scheme.php:15
+msgid "Otherwise your staging site will not be reachable after creation."
+msgstr "Sinon, votre site de staging ne sera pas accessible après la création."
+
+#: views/_main/contact-us-pro.php:36
+msgid "Submit"
+msgstr "Envoyer"
+
+#: Backend/Administrator.php:353 views/navigation/web-template.php:64
+msgid "License"
+msgstr "Licence"
+
+#: Backend/Administrator.php:371
+msgid "General"
+msgstr "Général"
+
+#: Backend/Administrator.php:315 Backend/Administrator.php:432
+#: views/navigation/web-template.php:39
+msgid "System Info"
+msgstr "Information système"
+
+#: Backend/Modules/Jobs/Directories.php:387
+msgid "Unable to write to: %s"
+msgstr "Impossible d’écrire sur : %s"
+
+#: Framework/Assets/I18n.php:29 views/job/locked.php:53
+#: views/job/modal/process.php:1 views/otp/overlay.php:23
+msgid "Cancel"
+msgstr "Annuler"
+
+#: views/cli/cli-integration-modal.php:382 views/clone/ajax/process-lock.php:5
+#: views/clone/ajax/scan.php:129 views/staging/setup.php:103
+msgid "Back"
+msgstr "Retour"
+
+#: views/clone/ajax/exclude-settings.php:30 views/clone/ajax/scan.php:58
+#: views/staging/confirm-delete.php:48 views/staging/setup.php:57
+msgid "Files"
+msgstr "Fichiers"
+
+#: views/selections/files.php:88
+#: views/staging/_partials/files-selection.php:101
+msgid "Extra directories to copy"
+msgstr "Répertoires supplémentaires à copier"
+
+#: views/selections/files.php:109
+#: views/staging/_partials/files-selection.php:120
+msgid "All files will be copied to: "
+msgstr "Tous les fichiers seront copiés dans : "
+
+#: views/clone/ajax/scan.php:133 views/staging/setup.php:107
+msgid "Start Cloning"
+msgstr "Démarrer le clonage"
+
+#: views/staging/staging-site-list-item.php:39
+msgid "Open"
+msgstr "Ouvrir"
+
+#: Framework/Assets/I18n.php:121 Framework/Assets/I18n.php:138
+#: Framework/Assets/I18n.php:264 views/staging/staging-site-list-item.php:45
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: Backup/Ajax/ScheduleList.php:101 Framework/Assets/I18n.php:39
+#: views/backup/listing-single-backup.php:203
+#: views/backup/listing-single-cloud-backup.php:57
+#: views/staging/staging-site-list-item.php:57
+#: views/tools/tabs/system-info.php:19 views/tools/tabs/system-info.php:22
+msgid "Delete"
+msgstr "Supprimer"
+
+#: views/clone/ajax/start.php:21
+msgid "Display working log"
+msgstr "Afficher le journal de travail"
+
+#: views/welcome/welcome.php:18
+msgid "Cloning"
+msgstr "Clonage"
+
+#: Core/Cron/Cron.php:73
+msgid "Once Weekly"
+msgstr "Une fois par semaine"
+
+#: Core/Cron/Cron.php:78
+msgid "Once a month"
+msgstr "Une fois par mois"
+
+#: Framework/Mails/Report/Report.php:131
+msgid "Please enter your issue."
+msgstr "Veuillez saisir votre problème."
+
+#: Framework/Mails/Report/Report.php:135
+msgid "Please accept our privacy policy."
+msgstr "Veuillez accepter notre politique de confidentialité."
+
+#: Frontend/LoginForm.php:215
+msgid "Password"
+msgstr "Mot de passe"
+
+#: Frontend/LoginForm.php:216
+msgid "Remember Me"
+msgstr "Se souvenir de moi"
+
+#: Frontend/LoginForm.php:217
+msgid "Log In"
+msgstr "Connexion"
+
+#: Backend/Modules/Jobs/Directories.php:368
+msgid "Unable to open %s with mode %s"
+msgstr "Impossible d’ouvrir %s avec le mode %s"
+
+#: Backend/Modules/Jobs/Directories.php:390
+msgid "Out of disk space."
+msgstr "Espace disque insuffisant."
+
+#: Backend/Pluginmeta/Pluginmeta.php:185
+msgid "Start Now"
+msgstr "Commencer maintenant"
+
+#: Backend/Administrator.php:326 views/backup/listing-single-backup.php:324
+msgid "Get WP Staging Pro"
+msgstr "Obtenir WP Staging Pro"
+
+#: views/frontend/loginForm.php:84 views/staging/wordpress-com/index.php:26
+msgid "WP Staging Pro"
+msgstr "WP Staging Pro"
+
+#: Framework/Mails/Report/Report.php:127
+msgid "Email address is not valid."
+msgstr "L’adresse de messagerie n’est pas valide."
+
+#: Frontend/Frontend.php:56
+msgid "Username or Email Address"
+msgstr "Identifiant ou adresse de messagerie"
+
+#: views/staging/listing.php:50
+msgid "Your Staging Sites:"
+msgstr "Vos sites de staging :"
+
+#. Plugin URI of the plugin
+#: wp-staging.php
+msgid "https://wordpress.org/plugins/wp-staging"
+msgstr "https://fr.wordpress.org/plugins/wp-staging"
+
+#: views/notices/transient.php:6
+msgid "WP Staging and WP STAGING Pro cannot both be active. We've automatically deactivated WP STAGING."
+msgstr "Les extensions WP Staging et WP Staging PRO ne peuvent pas être toutes deux actives. Nous avons automatiquement désactivé WP Staging."
+
+#: views/notices/transient.php:7
+msgid "WP Staging and WP STAGING Pro cannot both be active. We've automatically deactivated WP STAGING Pro."
+msgstr "Les extensions WP Staging et WP Staging Pro ne peuvent pas être toutes deux actives. Nous avons automatiquement désactivé WP Staging Pro."
+
+#: Framework/Settings/Settings.php:119
+msgid "Settings updated."
+msgstr "Réglages mis à jour."
+
+#: Backend/Administrator.php:305 Backend/Pluginmeta/Pluginmeta.php:56
+#: Backend/Pluginmeta/Pluginmeta.php:102 views/navigation/web-template.php:31
+msgid "Settings"
+msgstr "Réglages"

@@ -1,0 +1,128 @@
+# Translation of Plugins - ACF Field For Contact Form 7 - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - ACF Field For Contact Form 7 - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-11-19 12:15:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - ACF Field For Contact Form 7 - Stable (latest release)\n"
+
+#: includes/class-acf-field-for-contact-form-7.php:136
+msgid "BUY PRO"
+msgstr "Acheter la version Pro"
+
+#: includes/class-acf-field-for-contact-form-7.php:136
+msgid "Theme customizer"
+msgstr "Outil de personnalisation du thème "
+
+#: includes/class-acf-field-for-contact-form-7.php:136
+msgid "Widgets"
+msgstr "Widgets"
+
+#: includes/class-acf-field-for-contact-form-7.php:136
+msgid "Compatible with Gutenberg block"
+msgstr "Compatible avec les blocs Gutenberg"
+
+#: includes/class-acf-field-for-contact-form-7.php:136
+msgid "Pro Features"
+msgstr "Fonctionnalités Pro"
+
+#: includes/class-acf-field-for-contact-form-7.php:136
+msgid "Adds a new &apos;Contact Form 7&apos; field to the popular Advanced Custom Fields plugin."
+msgstr "Ajouter un nouveau champ « Contact Form 7 » à l’extension populaire Advanced Custom Fields."
+
+#: includes/class-acf-field-for-contact-form-7.php:112
+msgid "Premium"
+msgstr "Premium"
+
+#: includes/class-acf-field-for-contact-form-7.php:111
+msgid "Support"
+msgstr "Support"
+
+#: includes/class-acf-field-for-contact-form-7.php:41
+msgid "\"%s\" needs \"%s\" to run. Please download and activate it"
+msgstr "« %s » nécessite « %s » pour fonctionner. Veuillez le télécharger et l’activer"
+
+#. Author URI of the plugin
+msgid "https://www.krishaweb.com/"
+msgstr "https://www.krishaweb.com/"
+
+#. Author of the plugin
+msgid "KrishaWeb"
+msgstr "KrishaWeb"
+
+#. Description of the plugin
+msgid "Adds a new 'Contact Form 7' field to the popular Advanced Custom Fields plugin."
+msgstr "Ajouter un nouveau champ « Contact Form 7 » à l’extension populaire Advanced Custom Fields."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/acf-field-for-contact-form-7/"
+msgstr "https://wordpress.org/plugins/acf-field-for-contact-form-7/"
+
+#. Plugin Name of the plugin
+#: includes/class-acf-field-for-contact-form-7.php:136
+msgid "ACF Field For Contact Form 7"
+msgstr "ACF Field For Contact Form 7"
+
+#: includes/acf-fields/acf-contact-form-7-v5.php:38
+msgid "Select form"
+msgstr "Sélectionner un formulaire"
+
+#: includes/acf-fields/acf-contact-form-7-v5.php:24
+msgid "Contact form 7"
+msgstr "Contact Form 7"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:246
+msgid "Select Multiple?"
+msgstr "Sélectionner plusieurs ?"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:237
+#: includes/acf-fields/acf-contact-form-7-v4.php:256
+#: includes/acf-fields/acf-contact-form-7-v4.php:275
+msgid "No"
+msgstr "Non"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:236
+#: includes/acf-fields/acf-contact-form-7-v4.php:255
+#: includes/acf-fields/acf-contact-form-7-v4.php:274
+msgid "Yes"
+msgstr "Oui"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:200
+msgid "You will not be able to select these forms"
+msgstr "Vous ne serez pas en mesure de sélectionner ces formulaires"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:199
+msgid "Disabled Forms:"
+msgstr "Formulaires désactivés :"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:265
+#: includes/acf-fields/acf-contact-form-7-v3.php:99
+msgid "Hide disabled forms?"
+msgstr "Masquer les formulaires désactivés ?"
+
+#: includes/acf-fields/acf-contact-form-7-v3.php:80
+msgid "Select multiple forms?"
+msgstr "Sélectionner plusieurs formulaires ?"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:227
+#: includes/acf-fields/acf-contact-form-7-v3.php:61
+msgid "Allow Null?"
+msgstr "Autoriser une valeur vide ?"
+
+#: includes/acf-fields/acf-contact-form-7-v3.php:34
+msgid "You can not select these forms"
+msgstr "Vous ne pouvez pas sélectionner ces formulaires"
+
+#: includes/acf-fields/acf-contact-form-7-v3.php:33
+msgid "Disabled forms:"
+msgstr "Formulaires désactivés :"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:12
+#: includes/acf-fields/acf-contact-form-7-v3.php:16
+msgid "Contact Form 7"
+msgstr "Contact Form 7"

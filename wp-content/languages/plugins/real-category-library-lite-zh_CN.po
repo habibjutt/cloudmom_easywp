@@ -1,0 +1,134 @@
+# Translation of Plugins - Real Category Management: Content Management in Category Folders - Stable (latest release) in Chinese (China)
+# This file is distributed under the same license as the Plugins - Real Category Management: Content Management in Category Folders - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-12-12 14:29:14+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Plugins - Real Category Management: Content Management in Category Folders - Stable (latest release)\n"
+
+#: inc/TaxOrder.php:131
+msgid "You are not allowed to sort this tree."
+msgstr "你不能对这棵树进行分类。"
+
+#: inc/view/ConfigPage.php:40
+msgid "Settings"
+msgstr "设置"
+
+#: inc/view/ConfigPage.php:30 public/dist/options.lite.js:1
+msgid "Category Management"
+msgstr "分类管理"
+
+#: inc/TaxOrder.php:167
+msgid "No item found."
+msgstr "未找到项目。"
+
+#. translators:
+#: inc/TaxOrder.php:125
+msgid "No categories found for this post type (%1$s) with the taxonomy (%2$s)."
+msgstr "未找到此文章类型 (%1$s) 和分类法 (%2$s) 的分类。"
+
+#: inc/RpmInitiator.php:61
+msgid "https://devowl.io/knowledge-base/codecanyon-where-can-i-find-my-license-key/"
+msgstr "https://devowl.io/knowledge-base/codecanyon-where-can-i-find-my-license-key/"
+
+#: inc/rest/Term.php:90
+msgid "You can not delete the default category."
+msgstr "不能删除默认分类。"
+
+#: inc/rest/Term.php:88
+msgid "Category does not exist."
+msgstr "分类不存在。"
+
+#: inc/rest/Term.php:63
+msgid "Unknown error: The term could not be created."
+msgstr "未知错误：无法创建术语。"
+
+#: inc/rest/Service.php:159
+msgid "Real Category Management is not active for the current user."
+msgstr "当前用户未激活 Real Category Management。"
+
+#: inc/rest/Service.php:156
+msgid "Forbidden"
+msgstr "禁止"
+
+#: inc/rest/Service.php:141
+msgid "The passed term id was not found."
+msgstr "未找到传递的术语 ID。"
+
+#: inc/rest/Service.php:128
+msgid "No type or taxonomy provided."
+msgstr "未提供类型或分类。"
+
+#: inc/rest/Service.php:97
+msgid "No type or valid taxonomy provided."
+msgstr "未提供类型或有效分类法。"
+
+#: inc/rest/Post.php:57
+msgid "Something went wrong."
+msgstr "出问题了"
+
+#: inc/Core.php:95
+msgid "https://devowl.io/go/real-category-management?source=rcm-lite"
+msgstr "https://devowl.io/go/real-category-management?source=rcm-lite"
+
+#: inc/AdInitiator.php:63
+msgid "Go to settings"
+msgstr "转到设置"
+
+#: inc/AdInitiator.php:54
+msgid "Switching between pages or categories can usually take some time. With this plugin you can enjoy a fast loading of your tables."
+msgstr "在页面或分类之间切换通常需要一些时间。有了这个插件，您就可以享受表格的快速加载。"
+
+#: inc/AdInitiator.php:54
+msgid "Switch pages without page reload"
+msgstr "无需重新加载页面即可切换页面"
+
+#: inc/AdInitiator.php:54
+msgid "Shop managers with many products also have to maintain numerous categories. Wouldn't it be helpful to maintain the product categories and attributes more elegantly?"
+msgstr "拥有众多产品的店长还必须维护众多分类。如果能更巧妙地维护产品分类和属性，岂不是更好？"
+
+#: inc/AdInitiator.php:54
+msgid "Supports WooCommerce products"
+msgstr "支持 WooCommerce 产品"
+
+#: inc/AdInitiator.php:54
+msgid "In the PRO version you can also enable the tree on pages and custom post types."
+msgstr "在专业版中，您还可以在页面和自定义文章类型中启用树形结构。"
+
+#: inc/AdInitiator.php:54
+msgid "Do you maintain many categories? The default view of the categories can be a bit confusing, can't it? This plugin creates an explorer-like tree on the left side of your posts table. Create, rename, delete or rearrange your categories with a single click!"
+msgstr "您有很多分类吗？默认的分类视图可能会有点混乱，不是吗？这个插件可以在文章表的左侧创建一个类似于资源管理器的树状结构。只需单击一下，即可创建、重命名、删除或重新排列分类！"
+
+#: inc/AdInitiator.php:54
+msgid "Full control over your categories"
+msgstr "完全控制您的分类"
+
+#. Author URI of the plugin
+#: index.php
+msgid "https://devowl.io"
+msgstr "https://devowl.io"
+
+#. Author of the plugin
+#: index.php
+msgid "devowl.io"
+msgstr "devowl.io"
+
+#. Description of the plugin
+#: index.php
+msgid "Manage posts, pages and custom post-types in an explorer-like tree view and create a custom order for your categories and other taxonomies."
+msgstr "在类似于资源管理器的树形视图中管理文章、页面和自定义文章类型，并为分类和其他分类法创建自定义顺序。"
+
+#. Plugin URI of the plugin
+#: index.php
+msgid "https://codecanyon.net/item/wordpress-real-category-management-custom-category-order-tree-view/13580393"
+msgstr "https://codecanyon.net/item/wordpress-real-category-management-custom-category-order-tree-view/13580393"
+
+#. Plugin Name of the plugin
+#: index.php
+msgid "Real Category Management (Free)"
+msgstr "Real Category Management（免费）"

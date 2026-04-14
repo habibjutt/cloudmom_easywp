@@ -1,0 +1,77 @@
+# Translation of Plugins - ReOrder Posts within Categories - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - ReOrder Posts within Categories - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-05-03 11:01:30+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - ReOrder Posts within Categories - Stable (latest release)\n"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:40
+msgid "A sub-menu is now placed under each post type menu in your dashboard to access the sorting page."
+msgstr "Un sous-menu apparaît désormais dans votre tableau de bord, en dessous de chaque type de publication. Il vous permet d’accéder à la page de tri."
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:133
+msgid "Yes"
+msgstr "Oui"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:138
+msgid "No"
+msgstr "Non"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:40
+msgid "Options saved."
+msgstr "Options enregistrées."
+
+#: admin/class-reorder-post-within-categories-admin.php:973
+msgid "Settings"
+msgstr "Réglages"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:80
+msgid "Greyed-out categories contain too few posts and aren’t available for sorting."
+msgstr "Les catégories grisées contiennent trop peu de publications et ne sont donc pas proposées pour le tri."
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:57
+msgid "Post Types available:"
+msgstr "Types de publications disponibles :"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:51
+msgid "Re-Order Posts within category"
+msgstr "Réorganiser les publications au sein d’une catégorie"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:95
+msgid "Use the manual sorting for this category?"
+msgstr "Utiliser le tri manuel pour cette catégorie ?"
+
+#. translators: link to settings page
+#: admin/partials/reorder-post-within-categories-notice-display.php:5
+msgid "First of all, you need to <a href=\"%s\">save your settings for <em>ReOrder Posts in Categories</em></a>."
+msgstr "Tout d'abord, vous devez enregistrer <a href=\"%s\">vos réglages pour <em>ReOrder Posts in Categories</em></a>."
+
+#. Author URI of the plugin
+msgid "https://profiles.wordpress.org/aurovrata/"
+msgstr "https://profiles.wordpress.org/aurovrata/"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:55
+msgid "Select the categories you want to manually sort the items. Once you have checked and confirmed this information, a sub-menu will appear under each post type menu."
+msgstr "Cocher les catégories que vous voulez réorganiser. Une fois que vous aurez coché et validé ces informations, un nouveau menu apparaîtra sous chaque type de publication concerné."
+
+#: admin/class-reorder-post-within-categories-admin.php:896
+msgid "ReOrder Post"
+msgstr "Réorganiser les publications"
+
+#. Plugin URI of the plugin
+msgid "https://github.com/aurovrata/ReOrder-posts-within-categories"
+msgstr "https://github.com/aurovrata/ReOrder-posts-within-categories/"
+
+#. Plugin Name of the plugin
+msgid "ReOrder Posts within Categories"
+msgstr "ReOrder Post Within Categories"
+
+#: admin/class-reorder-post-within-categories-admin.php:896
+msgid "ReOrder Post within Categories"
+msgstr "Réorganiser les publications dans les catégories"

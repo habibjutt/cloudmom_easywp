@@ -1,0 +1,81 @@
+# Translation of Plugins - ReOrder Posts within Categories - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - ReOrder Posts within Categories - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-08-21 12:38:33+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - ReOrder Posts within Categories - Stable (latest release)\n"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:162
+msgid "Reset order"
+msgstr "Restablecer orden"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:40
+msgid "A sub-menu is now placed under each post type menu in your dashboard to access the sorting page."
+msgstr "Puedes encontrar en el escritorio un sub-menú menú en cada menú de cada tipo de entrada una página para reordenarlos."
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:133
+msgid "Yes"
+msgstr "Sí"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:138
+msgid "No"
+msgstr "No"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:40
+msgid "Options saved."
+msgstr "Opciones guardadas."
+
+#: admin/class-reorder-post-within-categories-admin.php:973
+msgid "Settings"
+msgstr "Ajustes"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:51
+msgid "Re-Order Posts within category"
+msgstr "Reordenar entradas para cada categoría"
+
+#. translators: link to settings page
+#: admin/partials/reorder-post-within-categories-notice-display.php:5
+msgid "First of all, you need to <a href=\"%s\">save your settings for <em>ReOrder Posts in Categories</em></a>."
+msgstr "Antes de nada, tienes que <a href=\"%s\">guardar tus ajustes de <em>ReOrder Posts in Categories</em></a>."
+
+#. Author URI of the plugin
+msgid "https://profiles.wordpress.org/aurovrata/"
+msgstr "https://profiles.wordpress.org/aurovrata/"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:80
+msgid "Greyed-out categories contain too few posts and aren’t available for sorting."
+msgstr "Las categorías en gris no pueden ser ordenadas porque contienen muy pocas entradas."
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:95
+msgid "Use the manual sorting for this category?"
+msgstr "¿Ordenar manualmente esta categoría?"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:55
+msgid "Select the categories you want to manually sort the items. Once you have checked and confirmed this information, a sub-menu will appear under each post type menu."
+msgstr "Selecciona las categorías en las que quieres ordenar manualmente los elementos. Una vez que hayas seleccionado y confirmado esta información, aparecerá un nuevo submenú en cada menú del tipo de contenido."
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:57
+msgid "Post Types available:"
+msgstr "Tipos de contenido disponibles: "
+
+#. Plugin URI of the plugin
+msgid "https://github.com/aurovrata/ReOrder-posts-within-categories"
+msgstr "https://github.com/aurovrata/ReOrder-posts-within-categories"
+
+#. Plugin Name of the plugin
+msgid "ReOrder Posts within Categories"
+msgstr "ReOrder Posts within Categories"
+
+#: admin/class-reorder-post-within-categories-admin.php:896
+msgid "ReOrder Post within Categories"
+msgstr "Reordenar las entradas dentro de las categorías"
+
+#: admin/class-reorder-post-within-categories-admin.php:896
+msgid "ReOrder Post"
+msgstr "Reordenar las entradas"
