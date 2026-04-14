@@ -16,6 +16,7 @@ wp-config.php
 # ========================
 wp-content/uploads/
 wp-content/cache/
+intrepid/wp-content/uploads/
 wp-content/backup-db/
 wp-content/backups/
 wp-content/upgrade/
