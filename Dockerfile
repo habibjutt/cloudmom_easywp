@@ -9,7 +9,6 @@ COPY . .
 
 # Remove files not needed in the runtime image
 RUN rm -rf \
-    intrepid/ \
     wp_dump.sql \
     *.tar.gz \
     Default.html \

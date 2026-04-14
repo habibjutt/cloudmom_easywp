@@ -7,16 +7,18 @@ wp_dump.sql
 *.rar
 *.7z
 
-# Backup/staging directories
+# Backup/staging directories and generated content
 intrepid/
+wp-content/uploads/
+wp-content/smush-webp/
+wp-content/wflogs/
+wp-content/cache/
 wp-content/backup-db/
 wp-content/backups/
 wp-content/updraft/
 wp-content/wpvivid*/
 wp-content/ai1wm-backups/
 wp-content/wphb-cache/
-wp-content/smush-webp/
-wp-content/cache/
 wp-content/upgrade/
 wp-content/debug.log
 

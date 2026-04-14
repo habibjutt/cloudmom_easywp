@@ -30,8 +30,10 @@ define( 'NONCE_SALT',       getenv('WP_NONCE_SALT')       ?: 'change-me-nonce-sa
 
 $table_prefix = getenv('WORDPRESS_TABLE_PREFIX') ?: 'wp_';
 
-define( 'WP_DEBUG',     (bool) getenv('WORDPRESS_DEBUG') );
-define( 'WP_DEBUG_LOG', false );
+define( 'WP_DEBUG',         false );
+define( 'WP_DEBUG_LOG',     false );
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set( 'display_errors', 0 );
 
 // Disable file edits from the admin panel for security
 define( 'DISALLOW_FILE_EDIT', true );
