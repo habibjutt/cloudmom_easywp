@@ -43,8 +43,8 @@ services:
       WORDPRESS_SITEURL:     ${WORDPRESS_SITEURL:-http://localhost:8080}
       WORDPRESS_DEBUG:       ${WORDPRESS_DEBUG:-0}
     volumes:
-      # Persist uploads between container restarts
-      - wp_uploads:/var/www/html/wp-content/uploads
+      # Bind-mount local uploads so existing images are served
+      - ./wp-content/uploads:/var/www/html/wp-content/uploads
 
   # ── phpMyAdmin ────────────────────────────────────────────────────────────
   phpmyadmin:
@@ -68,4 +68,3 @@ services:
 
 volumes:
   db_data:
-  wp_uploads:

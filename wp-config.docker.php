@@ -28,7 +28,7 @@ define( 'SECURE_AUTH_SALT', getenv('WP_SECURE_AUTH_SALT') ?: 'change-me-secure-a
 define( 'LOGGED_IN_SALT',   getenv('WP_LOGGED_IN_SALT')   ?: 'change-me-logged-in-salt' );
 define( 'NONCE_SALT',       getenv('WP_NONCE_SALT')       ?: 'change-me-nonce-salt' );
 
-$table_prefix = getenv('WORDPRESS_TABLE_PREFIX') ?: 'wp_';
+$table_prefix = getenv('WORDPRESS_TABLE_PREFIX') ?: 'muz_';
 
 define( 'WP_DEBUG',         false );
 define( 'WP_DEBUG_LOG',     false );
