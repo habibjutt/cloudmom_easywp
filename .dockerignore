@@ -1,0 +1,37 @@
+# Large files that don't belong in the image
+wp_dump.sql
+*.sql
+*.tar.gz
+*.bz2
+*.zip
+*.rar
+*.7z
+
+# Backup/staging directories
+intrepid/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/updraft/
+wp-content/wpvivid*/
+wp-content/ai1wm-backups/
+wp-content/wphb-cache/
+wp-content/smush-webp/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/debug.log
+
+# Docker files themselves
+Dockerfile
+docker-compose*.yml
+docker/
+.env
+.env.*
+
+# Git
+.git/
+.gitignore
+
+# Dev / OS
+.DS_Store
+node_modules/
+*.log

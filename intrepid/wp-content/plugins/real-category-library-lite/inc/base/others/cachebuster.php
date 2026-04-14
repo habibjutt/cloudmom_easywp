@@ -1,0 +1,30 @@
+<?php
+// Cachebusters generated on 2026-02-05 12:53:28
+return [
+	'src/public/dist/admin.css'=> 'c2ad85dfbb30ff87afc9e38570b39df1',
+	'src/public/dist/admin.css.map'=> '89d40d92b6e305ac46437df88479f06f',
+	'src/public/dist/admin.lite.js'=> '19751af516eaf4de11a2d37db8d3ed0b',
+	'src/public/dist/admin.lite.js.map'=> 'cae1cad2010446dffdfb0d9681494f34',
+	'src/public/dist/admin.lite.js.pot'=> '5922310bf7c28f1408c41c22fdc0b6fa',
+	'src/public/dist/admin.pro.js'=> 'bce60728d1574e7653174688b941b637',
+	'src/public/dist/admin.pro.js.map'=> 'dbf3ded163e9de20a7e45123b60d4211',
+	'src/public/dist/admin.pro.js.pot'=> '662cc7f54e518a03b97feb8f9e43f6da',
+	'src/public/dist/i18n-dependency-map-default-lite.json'=> '99914b932bd37a50b983c5e7c90ae93b',
+	'src/public/dist/i18n-dependency-map-default-pro.json'=> '99914b932bd37a50b983c5e7c90ae93b',
+	'src/public/dist/options.css'=> '6776e55c71abe65fefc05ecaff08b611',
+	'src/public/dist/options.css.map'=> '6458242f14b643b17f871400b0e1435a',
+	'src/public/dist/options.lite.js'=> 'dc67e8149cc9c870b60134ba82675deb',
+	'src/public/dist/options.lite.js.map'=> 'c077861a1074a2855212ab4027da7804',
+	'src/public/dist/options.lite.js.pot'=> '630678df141e36926439296e6db8c75e',
+	'src/public/dist/options.pro.js'=> '492515e487876139ad3a41e8fc2dc946',
+	'src/public/dist/options.pro.js.map'=> 'de3025fd071bf77c1bd64f42aa5eedb4',
+	'src/public/dist/options.pro.js.pot'=> '36c3303233ce229f035f5c7670bdc183',
+	'src/public/dist/vendor-admin.lite.js'=> '2e97705e2292845cecd2494cfa7d4ca3',
+	'src/public/dist/vendor-admin.lite.js.LICENSE.txt'=> '7168dc5832a21181cc7bc67b3b020a70',
+	'src/public/dist/vendor-admin.pro.js'=> '91529cb58b99f8456d4cdc8ed69daa57',
+	'src/public/dist/vendor-admin.pro.js.LICENSE.txt'=> '7168dc5832a21181cc7bc67b3b020a70',
+	'src/public/dist/vendor-options.lite.js'=> '8693990d03c3e4b0b044e29fff4d83ab',
+	'src/public/dist/vendor-options.lite.js.LICENSE.txt'=> 'b7007922b8c71955a62b83f7adfef2b5',
+	'src/public/dist/vendor-options.pro.js'=> 'ef3b8628e4e97bc4f3fb5c2d2cc26a9e',
+	'src/public/dist/vendor-options.pro.js.LICENSE.txt'=> 'b7007922b8c71955a62b83f7adfef2b5'
+];

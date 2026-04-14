@@ -5,6 +5,13 @@ wp-config.php
 .htaccess
 
 # ========================
+# Docker / Environment
+# ========================
+.env
+.env.local
+.env.*.local
+
+# ========================
 # WordPress Generated Directories
 # ========================
 wp-content/uploads/

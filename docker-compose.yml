@@ -1,0 +1,71 @@
+services:
+
+  # ── MariaDB ────────────────────────────────────────────────────────────────
+  db:
+    image: mariadb:11.4
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE:      ${MYSQL_DATABASE:-wordpress}
+      MYSQL_USER:          ${MYSQL_USER:-wordpress}
+      MYSQL_PASSWORD:      ${MYSQL_PASSWORD:-wordpress}
+    volumes:
+      - db_data:/var/lib/mysql
+      # DB init scripts run once on first start (when db_data volume is empty)
+      - ./docker/db-init:/docker-entrypoint-initdb.d:ro
+      # Mount the SQL dump so the init script can import it
+      - ./wp_dump.sql:/tmp/wp_dump.sql:ro
+    healthcheck:
+      test: ["CMD", "mariadb-admin", "ping", "-h", "localhost",
+             "-u", "root", "--password=${MYSQL_ROOT_PASSWORD:-rootpassword}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ── WordPress (Apache) ─────────────────────────────────────────────────────
+  wordpress:
+    build:
+      context: .
+      target: runtime
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST:     db:3306
+      WORDPRESS_DB_NAME:     ${MYSQL_DATABASE:-wordpress}
+      WORDPRESS_DB_USER:     ${MYSQL_USER:-wordpress}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD:-wordpress}
+      # Set to your local or production URL (no trailing slash)
+      WORDPRESS_SITEURL:     ${WORDPRESS_SITEURL:-http://localhost:8080}
+      WORDPRESS_DEBUG:       ${WORDPRESS_DEBUG:-0}
+    volumes:
+      # Persist uploads between container restarts
+      - wp_uploads:/var/www/html/wp-content/uploads
+
+  # ── phpMyAdmin ────────────────────────────────────────────────────────────
+  phpmyadmin:
+    image: phpmyadmin:5
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST:      db
+      PMA_PORT:      3306
+      PMA_USER:      root
+      PMA_PASSWORD:  ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      # Allow uploading SQL files up to 1 GB
+      UPLOAD_LIMIT:  1G
+      PHP_UPLOAD_MAX_FILESIZE: 1G
+      PHP_POST_MAX_SIZE:       1G
+      PHP_MEMORY_LIMIT:        512M
+
+volumes:
+  db_data:
+  wp_uploads:
