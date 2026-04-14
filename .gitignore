@@ -16,7 +16,11 @@ wp-config.php
 # ========================
 wp-content/uploads/
 wp-content/cache/
+wp-content/smush-webp/
+wp-content/wflogs/
 intrepid/wp-content/uploads/
+intrepid/wp-content/smush-webp/
+intrepid/wp-content/languages/
 wp-content/backup-db/
 wp-content/backups/
 wp-content/upgrade/
