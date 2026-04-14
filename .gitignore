@@ -2,7 +2,7 @@
 # WordPress Config & Sensitive Files
 # ========================
 wp-config.php
-.htaccess
+# Note: .htaccess is tracked so Docker picks it up
 
 # ========================
 # Docker / Environment
