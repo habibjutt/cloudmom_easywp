@@ -14,9 +14,21 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Common\Waiter;
+
+use Aws\Common\Client\AwsClientInterface;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Interface used in conjunction with clients to wait on a resource
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+interface ResourceWaiterInterface extends WaiterInterface
+{
+    /**
+     * Set the client associated with the waiter
+     *
+     * @param AwsClientInterface $client Client to use with the waiter
+     *
+     * @return self
+     */
+    public function setClient(AwsClientInterface $client);
+}

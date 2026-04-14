@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The XML you provided was not well-formed or did not validate against our published schema.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class MalformedACLErrorException extends S3Exception {}

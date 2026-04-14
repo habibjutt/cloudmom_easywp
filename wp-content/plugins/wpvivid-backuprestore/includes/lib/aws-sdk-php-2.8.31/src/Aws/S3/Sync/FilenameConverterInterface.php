@@ -14,9 +14,19 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\S3\Sync;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Converts filenames from one system to another (e.g. local to Amazon S3)
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+interface FilenameConverterInterface
+{
+    /**
+     * Convert a filename
+     *
+     * @param string $filename Name of the file to convert
+     *
+     * @return string
+     */
+    public function convert($filename);
+}

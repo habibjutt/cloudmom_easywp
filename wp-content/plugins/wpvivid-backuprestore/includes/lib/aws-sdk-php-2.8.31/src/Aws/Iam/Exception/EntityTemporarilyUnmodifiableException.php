@@ -14,9 +14,9 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Iam\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The request was rejected because it referenced an entity that is temporarily unmodifiable, such as a user name that was deleted and then recreated. The error indicates that the request is likely to succeed if you try again after waiting several minutes. The error message describes the entity.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class EntityTemporarilyUnmodifiableException extends IamException {}

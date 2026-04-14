@@ -14,9 +14,14 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\S3\Enum;
+
+use Aws\Common\Enum;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Contains enumerable ServerSideEncryption values
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class ServerSideEncryption extends Enum
+{
+    const AES256 = 'AES256';
+}

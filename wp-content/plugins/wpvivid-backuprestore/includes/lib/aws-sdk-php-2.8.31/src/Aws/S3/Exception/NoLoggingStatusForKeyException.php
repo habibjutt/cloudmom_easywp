@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * There is no such thing as a logging status sub-resource for a key.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class NoLoggingStatusForKeyException extends S3Exception {}

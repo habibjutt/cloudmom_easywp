@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Cross location logging not allowed. Buckets in one geographic location cannot log information to a bucket in another location.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class CrossLocationLoggingProhibitedException extends S3Exception {}

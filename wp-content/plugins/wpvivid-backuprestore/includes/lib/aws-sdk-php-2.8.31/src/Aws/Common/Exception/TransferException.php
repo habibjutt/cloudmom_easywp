@@ -14,9 +14,11 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Common\Exception;
+
+use Guzzle\Http\Exception\CurlException;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Transfer request exception
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class TransferException extends CurlException implements AwsExceptionInterface {}

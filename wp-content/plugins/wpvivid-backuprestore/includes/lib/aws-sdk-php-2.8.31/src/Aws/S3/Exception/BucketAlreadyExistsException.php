@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class BucketAlreadyExistsException extends S3Exception {}

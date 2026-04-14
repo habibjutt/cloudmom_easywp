@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Your metadata headers exceed the maximum allowed metadata size.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class MetadataTooLargeException extends S3Exception {}

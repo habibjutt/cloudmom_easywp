@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Your POST request fields preceding the upload file were too large.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class MaxPostPreDataLengthExceededErrorException extends S3Exception {}

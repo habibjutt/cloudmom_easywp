@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Your socket connection to the server was not read from or written to within the timeout period.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class RequestTimeoutException extends S3Exception {}

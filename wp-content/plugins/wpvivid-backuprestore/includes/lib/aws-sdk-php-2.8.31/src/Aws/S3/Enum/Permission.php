@@ -14,9 +14,18 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\S3\Enum;
+
+use Aws\Common\Enum;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Contains enumerable Permission values
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class Permission extends Enum
+{
+    const FULL_CONTROL = 'FULL_CONTROL';
+    const WRITE = 'WRITE';
+    const WRITE_ACP = 'WRITE_ACP';
+    const READ = 'READ';
+    const READ_ACP = 'READ_ACP';
+}

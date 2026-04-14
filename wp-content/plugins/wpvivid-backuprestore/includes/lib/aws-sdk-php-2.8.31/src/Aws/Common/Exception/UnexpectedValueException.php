@@ -14,9 +14,9 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Common\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * AWS SDK namespaced version of the SPL UnexpectedValueException.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class UnexpectedValueException extends \UnexpectedValueException implements AwsExceptionInterface {}

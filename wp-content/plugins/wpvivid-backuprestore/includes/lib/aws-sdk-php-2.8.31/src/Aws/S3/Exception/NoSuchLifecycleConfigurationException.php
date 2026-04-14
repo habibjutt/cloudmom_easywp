@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The lifecycle configuration does not exist.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class NoSuchLifecycleConfigurationException extends S3Exception {}

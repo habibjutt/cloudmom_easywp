@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The bucket POST must contain the specified field name. If it is specified, please check the order of the fields.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class UserKeyMustBeSpecifiedException extends S3Exception {}

@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The Content-MD5 you specified did not match what we received.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class BadDigestException extends S3Exception {}

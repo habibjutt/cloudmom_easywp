@@ -14,9 +14,9 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Iam\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The request was rejected because it referenced an entity that does not exist. The error message describes the entity.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class NoSuchEntityException extends IamException {}

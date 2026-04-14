@@ -14,9 +14,17 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Common\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * "Marker Interface" implemented by every exception in the AWS SDK
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+interface AwsExceptionInterface
+{
+    public function getCode();
+    public function getLine();
+    public function getFile();
+    public function getMessage();
+    public function getPrevious();
+    public function getTrace();
+}

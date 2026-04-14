@@ -14,9 +14,15 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\S3\Enum;
+
+use Aws\Common\Enum;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Contains enumerable Payer values
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class Payer extends Enum
+{
+    const REQUESTER = 'Requester';
+    const BUCKET_OWNER = 'BucketOwner';
+}

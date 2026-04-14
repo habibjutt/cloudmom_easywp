@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Requesting the torrent file of a bucket is not permitted.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class RequestTorrentOfBucketErrorException extends S3Exception {}

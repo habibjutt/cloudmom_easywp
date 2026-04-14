@@ -14,9 +14,9 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Iam\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The request was rejected because the public key certificate and the private key do not match.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class KeyPairMismatchException extends IamException {}

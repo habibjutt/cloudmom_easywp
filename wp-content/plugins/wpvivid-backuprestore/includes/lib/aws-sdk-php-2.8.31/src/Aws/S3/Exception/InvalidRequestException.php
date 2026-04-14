@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * SOAP requests must be made over an HTTPS connection.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class InvalidRequestException extends S3Exception {}

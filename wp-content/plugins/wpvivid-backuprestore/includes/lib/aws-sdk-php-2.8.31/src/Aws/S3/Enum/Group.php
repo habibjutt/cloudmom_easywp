@@ -14,9 +14,16 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\S3\Enum;
+
+use Aws\Common\Enum;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Contains enumerable Amazon S3 group options for ACL grantees
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class Group extends Enum
+{
+    const AUTHENTICATED_USERS = 'http://acs.amazonaws.com/groups/global/AuthenticatedUsers';
+    const ALL_USERS           = 'http://acs.amazonaws.com/groups/global/AllUsers';
+    const LOG_DELIVERY        = 'http://acs.amazonaws.com/groups/s3/LogDelivery';
+}

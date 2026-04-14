@@ -14,9 +14,11 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Iam\Exception;
+
+use Aws\Common\Exception\ServiceResponseException;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Default service exception class
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class IamException extends ServiceResponseException {}

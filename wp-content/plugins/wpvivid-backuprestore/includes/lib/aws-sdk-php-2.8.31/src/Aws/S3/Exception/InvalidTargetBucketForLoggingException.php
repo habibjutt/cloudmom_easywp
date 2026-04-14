@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The target bucket for logging does not exist, is not owned by you, or does not have the appropriate grants for the log-delivery group.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class InvalidTargetBucketForLoggingException extends S3Exception {}

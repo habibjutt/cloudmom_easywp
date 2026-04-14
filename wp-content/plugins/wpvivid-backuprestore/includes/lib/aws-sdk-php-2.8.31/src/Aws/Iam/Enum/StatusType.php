@@ -14,9 +14,15 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Iam\Enum;
+
+use Aws\Common\Enum;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Contains enumerable StatusType values
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class StatusType extends Enum
+{
+    const ACTIVE = 'Active';
+    const INACTIVE = 'Inactive';
+}

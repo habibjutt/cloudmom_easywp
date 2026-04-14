@@ -14,9 +14,9 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Iam\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The request was rejected because it attempted to create a resource that already exists.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class EntityAlreadyExistsException extends IamException {}

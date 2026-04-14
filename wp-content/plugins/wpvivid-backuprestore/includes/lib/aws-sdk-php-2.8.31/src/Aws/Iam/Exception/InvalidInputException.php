@@ -14,9 +14,9 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Iam\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Exception that occurs when a InvalidInputException error is encountered
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class InvalidInputException extends IamException {}

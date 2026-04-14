@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * There is no TagSet associated with the bucket.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class NoSuchTagSetException extends S3Exception {}

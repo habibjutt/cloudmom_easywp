@@ -14,9 +14,9 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Iam\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The request was rejected because the authentication code was not recognized. The error message describes the specific error.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class InvalidAuthenticationCodeException extends IamException {}

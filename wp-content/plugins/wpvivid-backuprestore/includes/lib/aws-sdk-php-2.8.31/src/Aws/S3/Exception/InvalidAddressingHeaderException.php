@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * You must specify the Anonymous role.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class InvalidAddressingHeaderException extends S3Exception {}

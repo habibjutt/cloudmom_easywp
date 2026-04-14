@@ -14,9 +14,26 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Common\Model\MultipartUpload;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * An object that encapsulates the data identifying an upload
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+interface UploadIdInterface extends \Serializable
+{
+    /**
+     * Create an UploadId from an array
+     *
+     * @param array $data Data representing the upload identification
+     *
+     * @return self
+     */
+    public static function fromParams($data);
+
+    /**
+     * Returns the array form of the upload identification for use as command params
+     *
+     * @return array
+     */
+    public function toParams();
+}

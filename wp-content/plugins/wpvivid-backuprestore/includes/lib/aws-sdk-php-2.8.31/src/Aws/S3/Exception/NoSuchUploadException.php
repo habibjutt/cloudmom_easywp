@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The specified multipart upload does not exist.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class NoSuchUploadException extends S3Exception {}

@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * You must provide the Content-Length HTTP header.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class MissingContentLengthException extends S3Exception {}

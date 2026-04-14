@@ -16,7 +16,9 @@
 
 namespace Aws\S3\Exception;
 
+use Aws\Common\Exception\ServiceResponseException;
+
 /**
- * The specified bucket does not have a CORs configuration.
+ * Default service exception class
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class S3Exception extends ServiceResponseException {}

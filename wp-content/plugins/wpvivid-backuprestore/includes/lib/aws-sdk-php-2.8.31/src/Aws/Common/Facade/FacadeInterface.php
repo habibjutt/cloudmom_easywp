@@ -14,9 +14,21 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Common\Facade;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Interface that defines a client facade. Facades are convenient static classes that allow you to run client methods
+ * statically on a default instance from the service builder. The facades themselves are aliased into the global
+ * namespace for ease of use.
+ *
+ * @deprecated "Facades" are being removed in version 3.0 of the SDK.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+interface FacadeInterface
+{
+    /**
+     * Returns the key used to access the client instance from the Service Builder
+     *
+     * @return string
+     */
+    public static function getServiceBuilderKey();
+}

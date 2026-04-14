@@ -14,9 +14,9 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Iam\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The request was rejected because it attempted to create resources beyond the current AWS account limits. The error message describes the limit exceeded.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class LimitExceededException extends IamException {}

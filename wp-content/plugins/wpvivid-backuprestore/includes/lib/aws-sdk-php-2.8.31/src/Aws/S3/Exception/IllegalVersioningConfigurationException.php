@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Indicates that the Versioning configuration specified in the request is invalid.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class IllegalVersioningConfigurationException extends S3Exception {}

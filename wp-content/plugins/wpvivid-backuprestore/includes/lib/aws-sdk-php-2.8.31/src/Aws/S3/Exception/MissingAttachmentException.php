@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * A SOAP attachment was expected, but none were found.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class MissingAttachmentException extends S3Exception {}

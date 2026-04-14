@@ -14,9 +14,23 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Common\Exception;
+
+use Guzzle\Http\Message\RequestInterface;
+use Guzzle\Http\Message\Response;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Interface used to create AWS exception
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+interface ExceptionFactoryInterface
+{
+    /**
+     * Returns an AWS service specific exception
+     *
+     * @param RequestInterface $request  Unsuccessful request
+     * @param Response         $response Unsuccessful response that was encountered
+     *
+     * @return \Exception|AwsExceptionInterface
+     */
+    public function fromResponse(RequestInterface $request, Response $response);
+}

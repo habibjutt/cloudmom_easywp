@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Your request was missing a required header.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class MissingSecurityHeaderException extends S3Exception {}

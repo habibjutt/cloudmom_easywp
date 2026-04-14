@@ -14,9 +14,28 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Common\Waiter;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Waiter factory used to create waiter objects by short names
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+interface WaiterFactoryInterface
+{
+    /**
+     * Create a waiter by name
+     *
+     * @param string $waiter Name of the waiter to create
+     *
+     * @return WaiterInterface
+     */
+    public function build($waiter);
+
+    /**
+     * Check if the factory can create a waiter by a specific name
+     *
+     * @param string $waiter Name of the waiter to check
+     *
+     * @return bool
+     */
+    public function canBuild($waiter);
+}

@@ -14,9 +14,18 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Common\Enum;
+
+use Aws\Common\Enum;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Contains enumerable date format values used in the SDK
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class DateFormat extends Enum
+{
+    const ISO8601    = 'Ymd\THis\Z';
+    const ISO8601_S3 = 'Y-m-d\TH:i:s\Z';
+    const RFC1123    = 'D, d M Y H:i:s \G\M\T';
+    const RFC2822    = \DateTime::RFC2822;
+    const SHORT      = 'Ymd';
+}

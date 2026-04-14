@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The e-mail address you provided does not match any account on record.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class UnresolvableGrantByEmailAddressException extends S3Exception {}

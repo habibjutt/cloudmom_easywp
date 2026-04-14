@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * POST requires exactly one file upload per request.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class IncorrectNumberOfFilesInPostRequestException extends S3Exception {}

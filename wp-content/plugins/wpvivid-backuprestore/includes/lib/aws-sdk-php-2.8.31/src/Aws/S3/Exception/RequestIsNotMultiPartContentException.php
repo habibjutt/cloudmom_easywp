@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Bucket POST must be of the enclosure-type multipart/form-data.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class RequestIsNotMultiPartContentException extends S3Exception {}

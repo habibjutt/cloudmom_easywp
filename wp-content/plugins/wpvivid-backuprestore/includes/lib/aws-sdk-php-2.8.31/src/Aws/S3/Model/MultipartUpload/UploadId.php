@@ -14,9 +14,22 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\S3\Model\MultipartUpload;
+
+use Aws\Common\Model\MultipartUpload\AbstractUploadId;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * An object that encapsulates the identification for a Glacier upload part
+ * @codeCoverageIgnore
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class UploadId extends AbstractUploadId
+{
+    /**
+     * {@inheritdoc}
+     */
+    protected static $expectedValues = array(
+        'Bucket'   => false,
+        'Key'      => false,
+        'UploadId' => false
+    );
+}

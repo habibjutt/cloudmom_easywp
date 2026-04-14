@@ -14,9 +14,9 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Common\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Thrown when a particular PHP extension is required to execute the guarded logic, but the extension is not loaded
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class RequiredExtensionNotLoadedException extends RuntimeException {}

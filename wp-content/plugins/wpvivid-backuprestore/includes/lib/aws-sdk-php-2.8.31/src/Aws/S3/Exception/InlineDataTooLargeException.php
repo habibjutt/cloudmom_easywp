@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * Inline data exceeds the maximum allowed size.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class InlineDataTooLargeException extends S3Exception {}

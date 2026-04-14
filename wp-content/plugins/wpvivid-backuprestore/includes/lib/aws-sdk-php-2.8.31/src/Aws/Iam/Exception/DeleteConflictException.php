@@ -14,9 +14,9 @@
  * permissions and limitations under the License.
  */
 
-namespace Aws\S3\Exception;
+namespace Aws\Iam\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The request was rejected because it attempted to delete a resource that has attached subordinate entities. The error message describes these entities.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class DeleteConflictException extends IamException {}

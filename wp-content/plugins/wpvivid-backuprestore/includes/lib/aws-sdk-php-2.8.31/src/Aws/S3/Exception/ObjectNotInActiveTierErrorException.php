@@ -17,6 +17,6 @@
 namespace Aws\S3\Exception;
 
 /**
- * The specified bucket does not have a CORs configuration.
+ * The source object of the COPY operation is not in the active tier and is only stored in Amazon Glacier.
  */
-class NoSuchCORSConfigurationException extends S3Exception {}
+class ObjectNotInActiveTierErrorException extends S3Exception {}
