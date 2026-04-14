@@ -1,61 +1,55 @@
-# Media Assets - Images
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.svg
-*.webp
-*.ico
-*.bmp
-*.tiff
-*.tif
-*.psd
-*.ai
-*.eps
-*.raw
-*.cr2
-*.nef
+# ========================
+# WordPress Config & Sensitive Files
+# ========================
+wp-config.php
+.htaccess
 
-# Media Assets - Videos
-*.mp4
-*.avi
-*.mov
-*.wmv
-*.flv
-*.mkv
-*.webm
-*.m4v
-*.mpg
-*.mpeg
-*.3gp
-*.ogv
+# ========================
+# WordPress Generated Directories
+# ========================
+wp-content/uploads/
+wp-content/cache/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/upgrade/
+wp-content/w3tc-config/
+wp-content/wc-logs/
+wp-content/debug.log
 
-# Media Assets - Audio
-*.mp3
-*.wav
-*.flac
-*.aac
-*.ogg
-*.wma
-*.m4a
+# Sitemap (auto-generated)
+sitemap.xml
+sitemap.xml.gz
 
-# Font Files
-*.ttf
-*.otf
-*.woff
-*.woff2
-*.eot
+# ========================
+# Log Files
+# ========================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Documents
-*.pdf
-*.doc
-*.docx
-*.xls
-*.xlsx
-*.ppt
-*.pptx
+# ========================
+# Node.js
+# ========================
+node_modules/
+package-lock.json
+yarn.lock
 
+# ========================
+# PHP Dependencies
+# ========================
+vendor/
+
+# ========================
+# Build Outputs
+# ========================
+dist/
+build/
+
+# ========================
 # Archives
+# ========================
 *.zip
 *.rar
 *.tar
@@ -63,48 +57,24 @@
 *.bz2
 *.7z
 *.tgz
-*.tar.gz
-*.tar.bz2
-*.xz
 
-# Log Files
-*.log
-logs/
-*.log.*
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# ========================
+# Database Dumps
+# ========================
+*.sql
+*.sqlite
+*.db
 
-# WordPress Specific
-wp-config.php
-wp-content/uploads/
-wp-content/cache/
-wp-content/backup-db/
-wp-content/backups/
-wp-content/upgrade/
-wp-content/w3tc-config/
-.htaccess
-sitemap.xml
-sitemap.xml.gz
+# ========================
+# Environment Files
+# ========================
+.env
+.env.local
+.env.*.local
 
-# Node.js
-node_modules/
-npm-debug.log
-yarn-error.log
-package-lock.json
-yarn.lock
-
-# Dependency directories
-vendor/
-bower_components/
-
-# Build outputs
-dist/
-build/
-*.min.js
-*.min.css
-
+# ========================
 # OS Files
+# ========================
 .DS_Store
 .DS_Store?
 ._*
@@ -114,7 +84,9 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
+# ========================
 # IDE Files
+# ========================
 .vscode/
 .idea/
 *.swp
@@ -125,17 +97,12 @@ Desktop.ini
 *.sublime-project
 *.sublime-workspace
 
+# ========================
 # Temporary Files
+# ========================
 *.tmp
 *.temp
 *.bak
 *.cache
 *.old
 *.orig
-
-# Database
-*.sql
-*.sqlite
-*.db
-
-wp-config.php
